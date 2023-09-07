@@ -93,7 +93,7 @@ class _IntroPageState extends State<IntroPage> {
           ),
         ),
       ),
-      bottomSheet: isLastPage
+      floatingActionButton: isLastPage
           ? MaterialButton(
               onPressed: () async {
                 Navigator.of(context).pushReplacement(
@@ -102,23 +102,24 @@ class _IntroPageState extends State<IntroPage> {
                   ),
                 );
               },
-              child:Container(
-                            width: 276,
-                            height: 50,
-                            decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(50),
-                                color: const Color(0xFFFA9B0D)),
-                            child: const Center(
-                              child: Text(
-                                "Get started",
-                                style: TextStyle(
-                                  fontSize: 16,
-                                  fontWeight: FontWeight.w600,
-                                  color: Color(0xFFFFFFFF),
-                                ),
-                              ),
-                            ),
-                          ),
+              child: Container(
+                width: 276,
+                height: 50,
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(50),
+                    color: const Color(0xFFFA9B0D)),
+                child: const Center(
+                  child: Text(
+                    "Get started",
+                    style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.w600,
+                      color: Color(0xFFFFFFFF),
+                    ),
+                  ),
+                ),
+              ),
+            )
           : Container(
               decoration: const BoxDecoration(color: Colors.white),
               height: 280,
@@ -129,16 +130,16 @@ class _IntroPageState extends State<IntroPage> {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         SmoothPageIndicator(
-                            controller: controller,
-                            count: 4,
-                            effect: const WormEffect(
-                              spacing: 5,
-                              dotColor: Color(0XFFFDD69B),
-                              dotHeight: 7,
-                              dotWidth: 7,
-                              activeDotColor: Color(0xFFFA9B0D),
-                            ),
-                            ),
+                          controller: controller,
+                          count: 4,
+                          effect: const WormEffect(
+                            spacing: 5,
+                            dotColor: Color(0XFFFDD69B),
+                            dotHeight: 7,
+                            dotWidth: 7,
+                            activeDotColor: Color(0xFFFA9B0D),
+                          ),
+                        ),
                         MaterialButton(
                           onPressed: () {
                             controller.nextPage(
