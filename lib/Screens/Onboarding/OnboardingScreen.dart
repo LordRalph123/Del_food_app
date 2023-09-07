@@ -94,7 +94,7 @@ class _IntroPageState extends State<IntroPage> {
         ),
       ),
       bottomSheet: isLastPage
-          ? TextButton(
+          ? MaterialButton(
               onPressed: () async {
                 Navigator.of(context).pushReplacement(
                   MaterialPageRoute(
@@ -102,11 +102,23 @@ class _IntroPageState extends State<IntroPage> {
                   ),
                 );
               },
-              child: const Text(
-                "Get Started",
-                style: TextStyle(fontSize: 48),
-              ),
-            )
+              child:Container(
+                            width: 276,
+                            height: 50,
+                            decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(50),
+                                color: const Color(0xFFFA9B0D)),
+                            child: const Center(
+                              child: Text(
+                                "Next",
+                                style: TextStyle(
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w600,
+                                  color: Color(0xFFFFFFFF),
+                                ),
+                              ),
+                            ),
+                          ),
           : Container(
               decoration: const BoxDecoration(color: Colors.white),
               height: 280,
@@ -125,7 +137,8 @@ class _IntroPageState extends State<IntroPage> {
                               dotHeight: 7,
                               dotWidth: 7,
                               activeDotColor: Color(0xFFFA9B0D),
-                            )),
+                            ),
+                            ),
                         MaterialButton(
                           onPressed: () {
                             controller.nextPage(
