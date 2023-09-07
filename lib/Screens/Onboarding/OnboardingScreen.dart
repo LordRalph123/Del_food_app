@@ -110,7 +110,7 @@ class _IntroPageState extends State<IntroPage> {
                                 color: const Color(0xFFFA9B0D)),
                             child: const Center(
                               child: Text(
-                                "Next",
+                                "Get started",
                                 style: TextStyle(
                                   fontSize: 16,
                                   fontWeight: FontWeight.w600,
