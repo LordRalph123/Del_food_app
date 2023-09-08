@@ -44,7 +44,7 @@ class SecondOnboarding extends StatelessWidget {
                 child: TextField(
                   decoration: InputDecoration(
                       label: IconButton(
-                    icon: Icon(),
+                    icon: Icon(Icons.calendar_month),
                     onPressed: () {},
                   )),
                 ),
