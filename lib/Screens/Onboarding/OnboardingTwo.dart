@@ -25,8 +25,9 @@ class SecondOnboarding extends StatelessWidget {
                 width: 376,
                 height: 50,
                 decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(50),
-                    border: Border.all(color: Colors.grey, width: 1)),
+                  borderRadius: BorderRadius.circular(50),
+                  border: Border.all(color: Colors.grey, width: 1),
+                ),
               ),
             ],
           ),
