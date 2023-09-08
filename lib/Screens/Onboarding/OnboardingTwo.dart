@@ -30,6 +30,19 @@ class SecondOnboarding extends StatelessWidget {
                 ),
                 child: TextField(),
               ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [Text("Birthday"), Text("MM/DD/YYYY")],
+              ),
+              Container(
+                width: 376,
+                height: 50,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(50),
+                  border: Border.all(color: Colors.grey, width: 1),
+                ),
+                child: TextField(),
+              ),
             ],
           ),
         ),
