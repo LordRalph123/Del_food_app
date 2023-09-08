@@ -5,12 +5,31 @@ class SecondOnboarding extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       backgroundColor: Colors.grey,
-      body: Center(
-        child: Text(
-          "HomePage",
-          style: TextStyle(color: Colors.black87, fontSize: 54),
+      appBar: AppBar(
+        title: const Text("Create Your Account"),
+      ),
+      body: SingleChildScrollView(
+        child: Container(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              const Text(
+                "Full name",
+                style: TextStyle(),
+              ),
+              SizedBox(height: 3),
+              Container(
+                width: 376,
+                height: 50,
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(50),
+                    border: Border.all(color: Colors.grey, width: 1)),
+              ),
+            ],
+          ),
         ),
       ),
     );
