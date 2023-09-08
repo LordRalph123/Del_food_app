@@ -41,7 +41,13 @@ class SecondOnboarding extends StatelessWidget {
                   borderRadius: BorderRadius.circular(50),
                   border: Border.all(color: Colors.grey, width: 1),
                 ),
-                child: TextField(),
+                child: TextField(
+                  decoration: InputDecoration(
+                      label: IconButton(
+                    icon: Icon(),
+                    onPressed: () {},
+                  )),
+                ),
               ),
             ],
           ),
