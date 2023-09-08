@@ -43,9 +43,44 @@ class SecondOnboarding extends StatelessWidget {
                 ),
                 child: TextField(
                   decoration: InputDecoration(
-                      label: IconButton(
-                    icon: Icon(Icons.calendar_month),
+                    suffixIcon: IconButton(
+                      icon: Icon(Icons.calendar_month),
+                      onPressed: () {},
+                    ),
+                  ),
+                ),
+              ),
+              const Text(
+                "Email address",
+                style: TextStyle(),
+              ),
+              SizedBox(height: 3),
+              Container(
+                width: 376,
+                height: 50,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(50),
+                  border: Border.all(color: Colors.grey, width: 1),
+                ),
+                child: TextField(),
+              ),
+              const Text(
+                "Password",
+                style: TextStyle(),
+              ),
+              SizedBox(height: 3),
+              Container(
+                width: 376,
+                height: 50,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(50),
+                  border: Border.all(color: Colors.grey, width: 1),
+                ),
+                child: TextField(
+                  decoration: InputDecoration(
+                      suffixIcon: IconButton(
                     onPressed: () {},
+                    icon: Icon(Icons.visibility_off),
                   )),
                 ),
               ),
