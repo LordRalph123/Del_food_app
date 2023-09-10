@@ -12,15 +12,13 @@ class SecondOnboarding extends StatelessWidget {
       ),
       body: SingleChildScrollView(
         child: Container(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.start,
-            crossAxisAlignment: CrossAxisAlignment.start,
+          child: ListView(
             children: [
               const Text(
                 "Full name",
                 style: TextStyle(),
               ),
-              SizedBox(height: 3),
+              const SizedBox(height: 3),
               Container(
                 width: 376,
                 height: 50,
@@ -28,9 +26,9 @@ class SecondOnboarding extends StatelessWidget {
                   borderRadius: BorderRadius.circular(50),
                   border: Border.all(color: Colors.grey, width: 1),
                 ),
-                child: TextField(),
+                child: const TextField(),
               ),
-              Row(
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [Text("Birthday"), Text("MM/DD/YYYY")],
               ),
@@ -44,7 +42,7 @@ class SecondOnboarding extends StatelessWidget {
                 child: TextField(
                   decoration: InputDecoration(
                     suffixIcon: IconButton(
-                      icon: Icon(Icons.calendar_month),
+                      icon: const Icon(Icons.calendar_month),
                       onPressed: () {},
                     ),
                   ),
@@ -54,7 +52,7 @@ class SecondOnboarding extends StatelessWidget {
                 "Email address",
                 style: TextStyle(),
               ),
-              SizedBox(height: 3),
+              const SizedBox(height: 3),
               Container(
                 width: 376,
                 height: 50,
@@ -62,13 +60,13 @@ class SecondOnboarding extends StatelessWidget {
                   borderRadius: BorderRadius.circular(50),
                   border: Border.all(color: Colors.grey, width: 1),
                 ),
-                child: TextField(),
+                child: const TextField(),
               ),
               const Text(
                 "Password",
                 style: TextStyle(),
               ),
-              SizedBox(height: 3),
+              const SizedBox(height: 3),
               Container(
                 width: 376,
                 height: 50,
@@ -78,28 +76,29 @@ class SecondOnboarding extends StatelessWidget {
                 ),
                 child: TextField(
                   decoration: InputDecoration(
-                      suffixIcon: IconButton(
-                    onPressed: () {},
-                    icon: Icon(Icons.visibility_off),
-                  )),
+                    suffixIcon: IconButton(
+                      onPressed: () {},
+                      icon: const Icon(Icons.visibility_off),
+                    ),
+                  ),
                 ),
               ),
-              SizedBox(height: 64),
+              const SizedBox(height: 64),
               Container(
                 width: 376,
                 height: 50,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(50),
-                  color: Color(0xFF959595),
+                  color: const Color(0xFF959595),
                 ),
-                child: Center(
+                child: const Center(
                   child: Text("Get Started"),
                 ),
               ),
-              SizedBox(height: 16),
+              const SizedBox(height: 16),
               Flexible(
                 child: RichText(
-                  text: TextSpan(
+                  text: const TextSpan(
                     children: [
                       TextSpan(
                         text: "Already have an account?",
@@ -117,15 +116,15 @@ class SecondOnboarding extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(height: 48),
+              const SizedBox(height: 48),
               Container(
                 width: 376,
                 height: 50,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(50),
-                  border: Border.all(color: Color(0xFFFA9B0D), width: 1),
+                  border: Border.all(color: const Color(0xFFFA9B0D), width: 1),
                 ),
-                child: Center(
+                child: const Center(
                   child: Text(
                     "Skip",
                     style: TextStyle(
@@ -135,19 +134,25 @@ class SecondOnboarding extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(height: 48),
-              Row(
+              const SizedBox(height: 48),
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   Divider(
                     color: Color(0xFF5A5A5A),
                     thickness: 1,
                   ),
-                  Text("Or"),
-                  Divider(),
+                  Text(
+                    "Or",
+                    style: TextStyle(
+                        color: Color(0xFF332E28),
+                        fontSize: 18,
+                        fontWeight: FontWeight.w600),
+                  ),
+                  Divider(color: Color(0XFF332E28), thickness: 1),
                 ],
               ),
-              SizedBox(height: 48),
+              const SizedBox(height: 48),
               Container(
                 width: 376,
                 height: 50,
@@ -155,10 +160,12 @@ class SecondOnboarding extends StatelessWidget {
                   borderRadius: BorderRadius.circular(50),
                   border: Border.all(color: Colors.grey, width: 1),
                 ),
-                child: Center(
+                child: const Center(
                   child: Row(
                     children: [
-                      Image(image: AssetImage("asset/")),
+                      Image(
+                        image: AssetImage("asset/google.jpg"),
+                      ),
                       SizedBox(width: 24),
                       Text(
                         "Sign up with Google",
@@ -171,7 +178,7 @@ class SecondOnboarding extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(height: 32),
+              const SizedBox(height: 32),
               Container(
                 width: 376,
                 height: 50,
@@ -179,10 +186,10 @@ class SecondOnboarding extends StatelessWidget {
                   borderRadius: BorderRadius.circular(50),
                   border: Border.all(color: Colors.grey, width: 1),
                 ),
-                child: Center(
+                child: const Center(
                   child: Row(
                     children: [
-                      Image(image: AssetImage("asset/")),
+                      Image(image: AssetImage("asset/facebook.jpg")),
                       SizedBox(width: 24),
                       Text(
                         "Sign up with Facebook",

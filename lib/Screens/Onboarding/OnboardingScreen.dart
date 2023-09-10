@@ -127,70 +127,72 @@ class _IntroPageState extends State<IntroPage> {
                 padding: const EdgeInsets.fromLTRB(26, 50, 26, 62),
                 child: Center(
                   child: Column(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        SmoothPageIndicator(
-                          controller: controller,
-                          count: 4,
-                          effect: const WormEffect(
-                            spacing: 5,
-                            dotColor: Color(0XFFFDD69B),
-                            dotHeight: 7,
-                            dotWidth: 7,
-                            activeDotColor: Color(0xFFFA9B0D),
-                          ),
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      SmoothPageIndicator(
+                        controller: controller,
+                        count: 4,
+                        effect: const WormEffect(
+                          spacing: 5,
+                          dotColor: Color(0XFFFDD69B),
+                          dotHeight: 7,
+                          dotWidth: 7,
+                          activeDotColor: Color(0xFFFA9B0D),
                         ),
-                        MaterialButton(
-                          onPressed: () {
-                            controller.nextPage(
-                                duration: const Duration(milliseconds: 400),
-                                curve: Curves.easeInOut);
-                          },
-                          child: Container(
-                            width: 276,
-                            height: 50,
-                            decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(50),
-                                color: const Color(0xFFFA9B0D)),
-                            child: const Center(
-                              child: Text(
-                                "Next",
-                                style: TextStyle(
-                                  fontSize: 16,
-                                  fontWeight: FontWeight.w600,
-                                  color: Color(0xFFFFFFFF),
-                                ),
+                      ),
+                      MaterialButton(
+                        onPressed: () {
+                          controller.nextPage(
+                              duration: const Duration(milliseconds: 400),
+                              curve: Curves.easeInOut);
+                        },
+                        child: Container(
+                          width: 276,
+                          height: 50,
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(50),
+                              color: const Color(0xFFFA9B0D)),
+                          child: const Center(
+                            child: Text(
+                              "Next",
+                              style: TextStyle(
+                                fontSize: 16,
+                                fontWeight: FontWeight.w600,
+                                color: Color(0xFFFFFFFF),
                               ),
                             ),
                           ),
                         ),
-                        MaterialButton(
-                          onPressed: () {
-                            controller.jumpToPage(4);
-                          },
-                          child: Container(
-                            width: 276,
-                            height: 50,
-                            decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(50),
-                                color: Colors.white,
-                                border:
-                                    Border.all(color: const Color(0xFFFA9B0D))),
-                            child: const Center(
-                              child: Text(
-                                "Skip",
-                                style: TextStyle(
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.w600,
-                                  color: Color(0xFFFA9B0D),
-                                ),
+                      ),
+                      MaterialButton(
+                        onPressed: () {
+                          controller.jumpToPage(4);
+                        },
+                        child: Container(
+                          width: 276,
+                          height: 50,
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(50),
+                              color: Colors.white,
+                              border:
+                                  Border.all(color: const Color(0xFFFA9B0D))),
+                          child: const Center(
+                            child: Text(
+                              "Skip",
+                              style: TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.w600,
+                                color: Color(0xFFFA9B0D),
                               ),
                             ),
                           ),
                         ),
-                      ]),
+                      ),
+                    ],
+                  ),
                 ),
-              )),
+              ),
+            ),
     );
   }
 }
