@@ -54,7 +54,7 @@ class _otpState extends State<otp> {
       appBar: AppBar(
         leading: IconButton(
           onPressed: () {},
-          icon: Icon(Icons.arrow_back, size: 24),
+          icon: const Icon(Icons.arrow_back, size: 24),
         ),
       ),
       body: Column(
