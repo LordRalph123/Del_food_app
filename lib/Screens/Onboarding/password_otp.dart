@@ -145,7 +145,7 @@ class _otpState extends State<otp> {
               //conditions for validating
               if (currentText.length != 6 || currentText != "123456") {
                 errorController!.add(ErrorAnimationType
-                    .shake); // Triggering error shake animation
+                    .shake); //Triggering error shake animation
                 setState(() => hasError = true);
               } else {
                 setState(
