@@ -83,7 +83,7 @@ class _otpState extends State<otp> {
                   color: Colors.green.shade600,
                   fontWeight: FontWeight.bold,
                 ),
-                length: 6,
+                length: 4,
                 obscureText: true,
                 obscuringCharacter: '*',
                 obscuringWidget: const FlutterLogo(
@@ -102,7 +102,7 @@ class _otpState extends State<otp> {
                   shape: PinCodeFieldShape.box,
                   borderRadius: BorderRadius.circular(5),
                   fieldHeight: 50,
-                  fieldWidth: 40,
+                  fieldWidth: 50,
                   activeFillColor: Colors.white,
                 ),
                 cursorColor: Colors.black,
