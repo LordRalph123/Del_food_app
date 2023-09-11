@@ -151,7 +151,7 @@ class _otpState extends State<otp> {
                 setState(
                   () {
                     hasError = false;
-                    snackBar("OTP Verified!!");
+                    snackBar("OTP Verified");
                   },
                 );
               }
