@@ -68,7 +68,7 @@ class _otpState extends State<otp> {
                 fontWeight: FontWeight.w700),
           ),
           const Text(
-              "we just sent a 4 digit code to your email\n address @myem*****@gmail.com"),
+              "We just sent a 4 digit code to your email\n address @myem*****@gmail.com"),
           const SizedBox(height: 46),
           Form(
             key: formKey,
