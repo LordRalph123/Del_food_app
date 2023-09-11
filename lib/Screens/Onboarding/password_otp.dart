@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
+import 'dart:async';
 
 class otp extends StatefulWidget {
   const otp({
@@ -69,7 +70,6 @@ class _otpState extends State<otp> {
           const Text(
               "we just sent a 4 digit code to your email\n address @myem*****@gmail.com"),
           const SizedBox(height: 46),
-          //TO
           Form(
             key: formKey,
             child: Padding(
@@ -139,20 +139,38 @@ class _otpState extends State<otp> {
               ),
             ),
           ),
-          Container(
-            width: 376,
-            height: 50,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(50),
-              color: const Color(0xFF959595),
-            ),
-            child: const Center(
-              child: Text(
-                "Continue",
-                style: TextStyle(
-                    color: Color(0xFFFFFFFF),
-                    fontSize: 16,
-                    fontWeight: FontWeight.w600),
+          MaterialButton(
+            onPressed: () {
+              formKey.currentState!.validate();
+              // conditions for validating
+              if (currentText.length != 6 || currentText != "123456") {
+                errorController!.add(ErrorAnimationType
+                    .shake); // Triggering error shake animation
+                setState(() => hasError = true);
+              } else {
+                setState(
+                  () {
+                    hasError = false;
+                    snackBar("OTP Verified!!");
+                  },
+                );
+              }
+            },
+            child: Container(
+              width: 376,
+              height: 50,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(50),
+                color: const Color(0xFF959595),
+              ),
+              child: const Center(
+                child: Text(
+                  "Continue",
+                  style: TextStyle(
+                      color: Color(0xFFFFFFFF),
+                      fontSize: 16,
+                      fontWeight: FontWeight.w600),
+                ),
               ),
             ),
           ),
