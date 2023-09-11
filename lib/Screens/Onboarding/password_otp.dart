@@ -10,6 +10,22 @@ class otp extends StatefulWidget {
 
 class _otpState extends State<otp> {
   @override
+  void dispose() {
+    errorController!.close();
+
+    super.dispose();
+  }
+
+  // snackBar Widget
+  snackBar(String? message) {
+    return ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        content: Text(message!),
+        duration: const Duration(seconds: 2),
+      ),
+    );
+  }
+
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
