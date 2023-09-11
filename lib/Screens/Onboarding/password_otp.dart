@@ -2,13 +2,34 @@ import 'package:flutter/material.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
 
 class otp extends StatefulWidget {
-  const otp({super.key});
+  const otp({
+    Key? key,
+    this.phoneNumber,
+  }) : super(key: key);
+
+  final String? phoneNumber;
 
   @override
   State<otp> createState() => _otpState();
 }
 
 class _otpState extends State<otp> {
+  TextEditingController textEditingController = TextEditingController();
+  // ..text = "123456";
+
+  // ignore: close_sinks
+  StreamController<ErrorAnimationType>? errorController;
+
+  bool hasError = false;
+  String currentText = "";
+  final formKey = GlobalKey<FormState>();
+
+  @override
+  void initState() {
+    errorController = StreamController<ErrorAnimationType>();
+    super.initState();
+  }
+
   @override
   void dispose() {
     errorController!.close();
@@ -26,6 +47,7 @@ class _otpState extends State<otp> {
     );
   }
 
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
