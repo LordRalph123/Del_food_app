@@ -121,7 +121,7 @@ class _otpState extends State<otp> {
                 onCompleted: (v) {
                   debugPrint("Completed");
                 },
-                //onTap: () {
+                onTap: () {
                 //print("Pressed");
                 //},
                 onChanged: (value) {
