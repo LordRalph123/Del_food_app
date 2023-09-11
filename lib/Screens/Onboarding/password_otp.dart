@@ -142,7 +142,7 @@ class _otpState extends State<otp> {
           MaterialButton(
             onPressed: () {
               formKey.currentState!.validate();
-              // conditions for validating
+              //conditions for validating
               if (currentText.length != 6 || currentText != "123456") {
                 errorController!.add(ErrorAnimationType
                     .shake); // Triggering error shake animation
