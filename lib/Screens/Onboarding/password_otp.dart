@@ -140,6 +140,7 @@ class _otpState extends State<otp> {
             ),
           ),
           const SizedBox(height: 71),
+          Text("Resend OTP"),
           MaterialButton(
             onPressed: () {
               formKey.currentState!.validate();
