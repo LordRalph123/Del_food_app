@@ -127,7 +127,7 @@ class _LoginScreenState extends State<LoginScreen> {
               ),
               Divider(
                 thickness: 1,
-                color: Color,
+                color: Color(0xFFD6D4DD),
               ),
             ],
           ),
