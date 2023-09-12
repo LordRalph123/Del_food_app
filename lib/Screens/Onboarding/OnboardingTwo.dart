@@ -64,7 +64,9 @@ class SecondOnboarding extends StatelessWidget {
               ),
               const Text(
                 "Password",
-                style: TextStyle(color: Color(0xFF5A5A5A)),
+                style: TextStyle(
+                  color: Color(0xFF5A5A5A),
+                ),
               ),
               const SizedBox(height: 3),
               Container(
