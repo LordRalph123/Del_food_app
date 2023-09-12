@@ -67,6 +67,7 @@ class SecondOnboarding extends StatelessWidget {
                 style: TextStyle(
                   color: Color(0xFF5A5A5A),
                   fontSize: 14,
+                  fontWeight: 
                 ),
               ),
               const SizedBox(height: 3),
