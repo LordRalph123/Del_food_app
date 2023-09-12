@@ -116,7 +116,7 @@ class _otpState extends State<otp> {
                     offset: Offset(0, 1),
                     color: Colors.black12,
                     blurRadius: 10,
-                  )
+                  ),
                 ],
                 onCompleted: (v) {
                   debugPrint("Completed");
