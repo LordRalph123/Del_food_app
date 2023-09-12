@@ -166,7 +166,7 @@ class SecondOnboarding extends StatelessWidget {
                       Image(
                         image: AssetImage("asset/google.jpg"),
                       ),
-                      SizedBox(width: 24),
+                      SizedBox(width: 25),
                       Text(
                         "Sign up with Google",
                         style: TextStyle(
