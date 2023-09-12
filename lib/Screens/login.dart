@@ -125,7 +125,9 @@ class _LoginScreenState extends State<LoginScreen> {
                     fontSize: 18,
                     fontWeight: FontWeight.w600),
               ),
-              Divider(),
+              Divider(
+                thickness: 1,
+              ),
             ],
           ),
           const SizedBox(height: 48),
