@@ -14,7 +14,7 @@ class _LoginScreenState extends State<LoginScreen> {
       appBar: AppBar(
         leading: IconButton(
           onPressed: () {},
-          icon: Icon(Icons.cancel, size: 24),
+          icon: const Icon(Icons.cancel, size: 24),
         ),
       ),
       body: Column(
