@@ -121,9 +121,10 @@ class _LoginScreenState extends State<LoginScreen> {
               Text(
                 "Or",
                 style: TextStyle(
-                    color: Color(0xFF332E28),
-                    fontSize: 18,
-                    fontWeight: FontWeight.w600),
+                  color: Color(0xFF332E28),
+                  fontSize: 18,
+                  fontWeight: FontWeight.w600,
+                ),
               ),
               Divider(
                 thickness: 1,
