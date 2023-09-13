@@ -104,7 +104,9 @@ class _LoginScreenState extends State<LoginScreen> {
                   TextSpan(
                     text: "Create account",
                     style: TextStyle(
-                        color: Color(0xFFFA9B0D), fontWeight: FontWeight.bold),
+                      color: Color(0xFFFA9B0D),
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                 ],
               ),
