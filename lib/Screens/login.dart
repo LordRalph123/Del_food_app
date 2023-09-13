@@ -27,7 +27,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 fontSize: 24,
                 fontWeight: FontWeight.w700),
           ),
-          Text(
+          const Text(
               "Kindly login into your account to gain full\n access to Delfoods catalogue"),
           SizedBox(height: 32),
           const Text(
