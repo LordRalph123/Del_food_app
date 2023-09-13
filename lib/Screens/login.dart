@@ -29,7 +29,7 @@ class _LoginScreenState extends State<LoginScreen> {
           ),
           const Text(
               "Kindly login into your account to gain full\n access to Delfoods catalogue"),
-          SizedBox(height: 32),
+          const SizedBox(height: 32),
           const Text(
             "Email address",
             style: TextStyle(),
