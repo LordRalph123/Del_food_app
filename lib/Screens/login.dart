@@ -60,7 +60,9 @@ class _LoginScreenState extends State<LoginScreen> {
             child: TextField(
               decoration: InputDecoration(
                 suffixIcon: IconButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    prints
+                  },
                   icon: const Icon(Icons.visibility_off),
                 ),
               ),
