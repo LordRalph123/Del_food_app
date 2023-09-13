@@ -70,9 +70,10 @@ class _LoginScreenState extends State<LoginScreen> {
             "Forgot Password?",
             textAlign: TextAlign.right,
             style: TextStyle(
-                color: Color(0xFFFBAD37),
-                fontSize: 14,
-                fontWeight: FontWeight.w600),
+              color: Color(0xFFFBAD37),
+              fontSize: 14,
+              fontWeight: FontWeight.w600,
+            ),
           ),
           Container(
             width: 376,
