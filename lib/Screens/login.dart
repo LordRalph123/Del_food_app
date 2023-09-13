@@ -61,7 +61,7 @@ class _LoginScreenState extends State<LoginScreen> {
               decoration: InputDecoration(
                 suffixIcon: IconButton(
                   onPressed: () {
-                    print()
+                    print();
                   },
                   icon: const Icon(Icons.visibility_off),
                 ),
