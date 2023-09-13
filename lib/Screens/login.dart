@@ -20,7 +20,7 @@ class _LoginScreenState extends State<LoginScreen> {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text(
+          const Text(
             "Welcome Back",
             style: TextStyle(
                 color: Color(0xFF332E28),
