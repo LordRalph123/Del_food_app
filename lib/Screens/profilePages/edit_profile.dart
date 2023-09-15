@@ -168,7 +168,7 @@ class _EditProfileState extends State<EditProfile> {
                 ),
                 child: const Center(
                   child: Text(
-                    "Continue",
+                    "Edit",
                     style: TextStyle(
                         color: Color(0xFFFFFFFF),
                         fontSize: 16,
