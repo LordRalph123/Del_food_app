@@ -58,7 +58,8 @@ class _EditProfileState extends State<EditProfile> {
                 border: Border.all(color: Colors.grey, width: 1),
               ),
               child: const TextField(
-                decoration: InputDecoration(labelText: ),
+                decoration: InputDecoration(
+                    labelText: "Daniel Davies", labelStyle: TextStyle()),
               ),
             ),
             const Row(
