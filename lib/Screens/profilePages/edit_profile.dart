@@ -57,7 +57,9 @@ class _EditProfileState extends State<EditProfile> {
                 borderRadius: BorderRadius.circular(50),
                 border: Border.all(color: Colors.grey, width: 1),
               ),
-              child: const TextField(),
+              child: const TextField(
+                decoration: InputDecoration(labelText: ),
+              ),
             ),
             const Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
