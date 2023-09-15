@@ -32,7 +32,10 @@ class _EditProfileState extends State<EditProfile> {
             const SizedBox(height: 12),
             const Text(
               "Daniel Davies",
-              style: TextStyle(),
+              style: TextStyle(
+                  fontSize: 14,
+                  color: Color(0xFF5A5A5A),
+                  fontWeight: FontWeight.w400),
             ),
             const SizedBox(height: 30),
             const Text(
