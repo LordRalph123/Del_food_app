@@ -100,7 +100,7 @@ class _EditProfileState extends State<EditProfile> {
               child: TextField(
                 decoration: InputDecoration(
                   labelText: "27/04/1991",
-                  labelStyle: TextStyle(
+                  labelStyle: const TextStyle(
                     fontSize: 14,
                     fontWeight: FontWeight.w600,
                     color: Color(0xFF5A5A5A),
