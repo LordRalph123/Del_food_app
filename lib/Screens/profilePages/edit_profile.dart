@@ -18,7 +18,7 @@ class _EditProfileState extends State<EditProfile> {
         ),
         title: const Text(
           "My Profile",
-          style: TextStyle(),
+          style: TextStyle(fontSize:),
         ),
       ),
       body: Center(
