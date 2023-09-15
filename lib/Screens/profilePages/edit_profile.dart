@@ -90,9 +90,10 @@ class _EditProfileState extends State<EditProfile> {
                 decoration: InputDecoration(
                   labelText: "27/04/1991",
                   labelStyle: TextStyle(
-                      fontSize: 14,
-                      fontWeight: FontWeight.w600,
-                      color: Color(0xFF5A5A5A)),
+                    fontSize: 14,
+                    fontWeight: FontWeight.w600,
+                    color: Color(0xFF5A5A5A),
+                  ),
                   suffixIcon: IconButton(
                     icon: const Icon(Icons.calendar_month),
                     onPressed: () {},
