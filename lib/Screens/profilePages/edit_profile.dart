@@ -157,6 +157,41 @@ class _EditProfileState extends State<EditProfile> {
                 decoration: InputDecoration(labelText: "mymail@gmail.com"),
               ),
             ),
+            MaterialButton(
+              onPressed: () {
+                formKey.currentState!.validate();
+                //conditions for validating
+                if (currentText.length != 6 || currentText != "123456") {
+                  errorController!.add(ErrorAnimationType.shake);
+                  //Triggering error shake animation
+                  setState(() => hasError = true);
+                } else {
+                  setState(
+                    () {
+                      hasError = false;
+                      snackBar("OTP Verified");
+                    },
+                  );
+                }
+              },
+              child: Container(
+                width: 376,
+                height: 50,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(50),
+                  color: const Color(0xFF959595),
+                ),
+                child: const Center(
+                  child: Text(
+                    "Continue",
+                    style: TextStyle(
+                        color: Color(0xFFFFFFFF),
+                        fontSize: 16,
+                        fontWeight: FontWeight.w600),
+                  ),
+                ),
+              ),
+            ),
           ],
         ),
       ),
