@@ -62,7 +62,14 @@ class _EditProfileState extends State<EditProfile> {
             const Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text("Birthday", style: TextStyle()),
+                Text(
+                  "Birthday",
+                  style: TextStyle(
+                    fontSize: 14,
+                    fontWeight: FontWeight.w400,
+                    color: Color(0xFF5A5A5A),
+                  ),
+                ),
                 Text(
                   "MM/DD/YYYY",
                   style: TextStyle(
