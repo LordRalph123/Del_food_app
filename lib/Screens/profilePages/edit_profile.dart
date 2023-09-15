@@ -88,7 +88,8 @@ class _EditProfileState extends State<EditProfile> {
               ),
               child: TextField(
                 decoration: InputDecoration(
-                  label: "27/04/1991",
+                  labelText:"27/04/1991",
+                  labelStyle: TextStyle(fontSize: ),
                   suffixIcon: IconButton(
                     icon: const Icon(Icons.calendar_month),
                     onPressed: () {},
