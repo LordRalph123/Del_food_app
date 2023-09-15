@@ -50,7 +50,7 @@ class _PaymentMethodState extends State<PaymentMethod> {
                       color: Color(0xFF332E28),
                       fontSize: 16,
                       fontWeight: FontWeight.w400),
-                )
+                ),
               ],
             )),
           )
