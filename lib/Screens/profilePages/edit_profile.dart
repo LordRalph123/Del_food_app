@@ -158,22 +158,7 @@ class _EditProfileState extends State<EditProfile> {
               ),
             ),
             MaterialButton(
-              onPressed: () {
-                formKey.currentState!.validate();
-                //conditions for validating
-                if (currentText.length != 6 || currentText != "123456") {
-                  errorController!.add(ErrorAnimationType.shake);
-                  //Triggering error shake animation
-                  setState(() => hasError = true);
-                } else {
-                  setState(
-                    () {
-                      hasError = false;
-                      snackBar("OTP Verified");
-                    },
-                  );
-                }
-              },
+              onPressed: () {},
               child: Container(
                 width: 376,
                 height: 50,
