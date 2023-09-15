@@ -85,7 +85,10 @@ class _EditProfileState extends State<EditProfile> {
             ),
             const Text(
               "Email address",
-              style: TextStyle(fontSize:14, color: ),
+              style: TextStyle(
+                  fontSize: 14,
+                  color: Color(0xFF5A5A5A),
+                  fontWeight: FontWeight.w400),
             ),
             const SizedBox(height: 3),
             Container(
