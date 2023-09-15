@@ -129,8 +129,11 @@ class _EditProfileState extends State<EditProfile> {
               ),
               child: const TextField(
                 decoration: InputDecoration(
-                  labelText: "0812013534",
-                ),
+                    labelText: "0812013534",
+                    labelStyle: TextStyle(
+                        fontSize: 14,
+                        fontWeight: FontWeight.w600,
+                        color: Color(0xFF5A5A5A))),
               ),
             ),
             const Text(
