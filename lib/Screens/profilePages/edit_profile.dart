@@ -18,7 +18,11 @@ class _EditProfileState extends State<EditProfile> {
         ),
         title: const Text(
           "My Profile",
-          style: TextStyle(fontSize:),
+          style: TextStyle(
+            fontSize: 18,
+            fontWeight: FontWeight.w600,
+            color: Color(0xFF332E28),
+          ),
         ),
       ),
       body: Center(
@@ -57,7 +61,14 @@ class _EditProfileState extends State<EditProfile> {
             ),
             const Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [Text("Birthday"), Text("MM/DD/YYYY")],
+              children: [
+                Text("Birthday"),
+                Text("MM/DD/YYYY",
+                    style: TextStyle(
+                        color: Color(0xFFD6D4D1),
+                        fontSize: 14,
+                        fontWeight: FontWeight.w600))
+              ],
             ),
             Container(
               width: 376,
