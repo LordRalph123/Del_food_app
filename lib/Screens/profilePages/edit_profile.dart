@@ -63,11 +63,13 @@ class _EditProfileState extends State<EditProfile> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text("Birthday"),
-                Text("MM/DD/YYYY",
-                    style: TextStyle(
-                        color: Color(0xFFD6D4D1),
-                        fontSize: 14,
-                        fontWeight: FontWeight.w600))
+                Text(
+                  "MM/DD/YYYY",
+                  style: TextStyle(
+                      color: Color(0xFFD6D4D1),
+                      fontSize: 14,
+                      fontWeight: FontWeight.w600),
+                ),
               ],
             ),
             Container(
