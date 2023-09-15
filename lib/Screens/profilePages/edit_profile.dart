@@ -89,6 +89,7 @@ class _EditProfileState extends State<EditProfile> {
                 ),
               ],
             ),
+            SizedBox(height: 3),
             Container(
               width: 376,
               height: 50,
