@@ -59,6 +59,35 @@ class _PaymentMethodState extends State<PaymentMethod> {
               ),
             ),
           ),
+          Container(
+            width: 357,
+            height: 70,
+            decoration: BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(10),
+              border: Border.all(color: Color(0xFF959595), width: 1),
+            ),
+            child: Center(
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Image(
+                    image: AssetImage("assets/"),
+                  ),
+                  Text(
+                    "Add Master ard/Visa Card",
+                    style: TextStyle(
+                        color: Color(0xFF332E28),
+                        fontSize: 16,
+                        fontWeight: FontWeight.w400),
+                  ),
+                  IconButton(
+                      onPressed: () {}, icon: Icon(Icons.arrow_forward_ios))
+                ],
+              ),
+            ),
+          )
         ],
       ),
     );
