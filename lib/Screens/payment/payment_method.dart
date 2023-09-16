@@ -44,13 +44,15 @@ class _PaymentMethodState extends State<PaymentMethod> {
                   Image(
                     image: AssetImage("assets/"),
                   ),
+                  SizedBox(width: 21),
                   Text(
-                    "Add Master ard/Visa Card",
+                    "Add Master card/Visa Card",
                     style: TextStyle(
                         color: Color(0xFF332E28),
                         fontSize: 16,
                         fontWeight: FontWeight.w400),
                   ),
+                  SizedBox(width: 35),
                   IconButton(
                     onPressed: () {},
                     icon: Icon(Icons.arrow_forward_ios),
@@ -76,7 +78,7 @@ class _PaymentMethodState extends State<PaymentMethod> {
                     image: AssetImage("assets/"),
                   ),
                   Text(
-                    "Add Master ard/Visa Card",
+                    "Ad Paypay Account",
                     style: TextStyle(
                         color: Color(0xFF332E28),
                         fontSize: 16,
