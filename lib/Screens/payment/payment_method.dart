@@ -52,7 +52,9 @@ class _PaymentMethodState extends State<PaymentMethod> {
                         fontWeight: FontWeight.w400),
                   ),
                   IconButton(
-                      onPressed: () {}, icon: Icon(Icons.arrow_forward_ios))
+                    onPressed: () {},
+                    icon: Icon(Icons.arrow_forward_ios),
+                  ),
                 ],
               ),
             ),
