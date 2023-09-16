@@ -71,7 +71,7 @@ class _PaymentMethodState extends State<PaymentMethod> {
             ),
             child: Center(
               child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Image(
