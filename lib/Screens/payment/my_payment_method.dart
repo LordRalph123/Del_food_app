@@ -46,6 +46,27 @@ class _MyPaymentMethodState extends State<MyPaymentMethod> {
               ],
             )),
           ),
+          SizedBox(height: 480),
+          MaterialButton(
+            onPressed: () {},
+            child: Container(
+              width: 376,
+              height: 50,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(50),
+                color: const Color(0xFF959595),
+              ),
+              child: const Center(
+                child: Text(
+                  "+ Add payment method",
+                  style: TextStyle(
+                      color: Color(0xFFFFFFFF),
+                      fontSize: 16,
+                      fontWeight: FontWeight.w600),
+                ),
+              ),
+            ),
+          ),
         ],
       ),
     );
