@@ -37,14 +37,17 @@ class _MyPaymentMethodState extends State<MyPaymentMethod> {
               border: Border.all(color: Colors.grey, width: 1),
             ),
             child: Center(
-                child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                Image(image: AssetImage("assets/")),
-                Text("Master Card\n 5199 6780 2132 3282"),
-                Icon(Icons.more_vert)
-              ],
-            )),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Image(
+                    image: AssetImage("assets/"),
+                  ),
+                  Text("Master Card\n 5199 6780 2132 3282"),
+                  Icon(Icons.more_vert),
+                ],
+              ),
+            ),
           ),
           SizedBox(height: 480),
           MaterialButton(
