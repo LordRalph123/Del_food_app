@@ -77,7 +77,7 @@ class _PaymentMethodState extends State<PaymentMethod> {
                   Image(
                     image: AssetImage("assets/"),
                   ),
-                  Text(
+                  const Text(
                     "Add PaypaL Account",
                     style: TextStyle(
                         color: Color(0xFF332E28),
@@ -91,7 +91,7 @@ class _PaymentMethodState extends State<PaymentMethod> {
                 ],
               ),
             ),
-          )
+          ),
         ],
       ),
     );
