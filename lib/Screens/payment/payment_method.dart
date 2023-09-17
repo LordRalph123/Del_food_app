@@ -44,7 +44,7 @@ class _PaymentMethodState extends State<PaymentMethod> {
                   Image(
                     image: AssetImage("assets/"),
                   ),
-                  SizedBox(width: 21),
+                  const SizedBox(width: 21),
                   const Text(
                     "Add Master card/Visa Card",
                     style: TextStyle(
