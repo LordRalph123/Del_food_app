@@ -1,0 +1,53 @@
+import 'package:flutter/material.dart';
+
+class MyPaymentMethod extends StatefulWidget {
+  const MyPaymentMethod({super.key});
+
+  @override
+  State<MyPaymentMethod> createState() => _MyPaymentMethodState();
+}
+
+class _MyPaymentMethodState extends State<MyPaymentMethod> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        leading: IconButton(
+          onPressed: () {},
+          icon: const Icon(Icons.arrow_back, size: 24),
+        ),
+        title: const Text(
+          "Add Payment Method",
+          style: TextStyle(
+            fontSize: 18,
+            fontWeight: FontWeight.w700,
+            color: Color(0xFF332E28),
+          ),
+        ),
+      ),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Container(
+            width: 376,
+            height: 50,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(50),
+              border: Border.all(color: Colors.grey, width: 1),
+            ),
+            child: Center(
+                child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Image(image: AssetImage("assets/")),
+                Text("Master Card\n 5199 6780 2132 3282"),
+                Icon(Icons.more_vert)
+              ],
+            )),
+          ),
+        ],
+      ),
+    );
+  }
+}

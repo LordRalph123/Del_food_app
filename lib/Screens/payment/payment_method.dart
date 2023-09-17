@@ -78,7 +78,7 @@ class _PaymentMethodState extends State<PaymentMethod> {
                     image: AssetImage("assets/"),
                   ),
                   Text(
-                    "Ad Paypay Account",
+                    "Add Paypay Account",
                     style: TextStyle(
                         color: Color(0xFF332E28),
                         fontSize: 16,
