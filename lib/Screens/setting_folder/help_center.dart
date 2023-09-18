@@ -30,7 +30,9 @@ class _HelpCenterState extends State<HelpCenter> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-              "Have issues making an order or making use\n of our app? mail us at care@delfoods.ng or\n drop amessage for us below.")
+            "Have issues making an order or making use\n of our app? mail us at care@delfoods.ng or\n drop amessage for us below.",
+            style: TextStyle(),
+          )
         ],
       ),
     );
