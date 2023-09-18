@@ -40,6 +40,9 @@ class _DailyFoodTipsState extends State<DailyFoodTips> {
               style: TextStyle(),
             ),
           ),
+          Text(
+              "Eating fruits efore a meal is dangerous as it can\n cause indigestion, flatulence or heartburn and\n this is because fruits need more time to digest.",
+              style: TextStyle())
         ],
       ),
     );
