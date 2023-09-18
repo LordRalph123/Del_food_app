@@ -29,15 +29,15 @@ class _HelpCenterState extends State<HelpCenter> {
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(
+          const Text(
             "Have issues making an order or making use\n of our app? mail us at care@delfoods.ng or\n drop amessage for us below.",
             style: TextStyle(
               fontSize: 14,
               color: Color(0xFF5A5A5A),
             ),
           ),
-          SizedBox(height: 26),
-          Text(
+          const SizedBox(height: 26),
+          const Text(
             "Name",
             style: TextStyle(),
           ),
@@ -52,13 +52,14 @@ class _HelpCenterState extends State<HelpCenter> {
                 border: OutlineInputBorder(
                   borderRadius:
                       BorderRadius.circular(50), // Define the border radius
-                  borderSide: BorderSide(color: Color(0xFF959595), width: 1),
+                  borderSide:
+                      const BorderSide(color: Color(0xFF959595), width: 1),
                 ),
               ),
             ),
           ),
-          SizedBox(height: 15),
-          Text(
+          const SizedBox(height: 15),
+          const Text(
             "Email address",
             style: TextStyle(),
           ),
@@ -69,11 +70,12 @@ class _HelpCenterState extends State<HelpCenter> {
               decoration: InputDecoration(
                 filled: true,
                 fillColor: Colors.white,
-                contentPadding: EdgeInsets.all(12),
+                contentPadding: const EdgeInsets.all(12),
                 border: OutlineInputBorder(
                   borderRadius:
                       BorderRadius.circular(50), // Define the border radius
-                  borderSide: BorderSide(color: Color(0xFF959595), width: 1),
+                  borderSide:
+                      const BorderSide(color: Color(0xFF959595), width: 1),
                 ),
               ),
             ),
@@ -83,18 +85,19 @@ class _HelpCenterState extends State<HelpCenter> {
             "Tell us something",
             style: TextStyle(),
           ),
-          const Container(
+          Container(
             width: 325, // Define the width
             height: 226, // Define the height
             child: TextField(
               decoration: InputDecoration(
                 filled: true,
                 fillColor: Colors.white,
-                contentPadding: EdgeInsets.all(12),
+                contentPadding: const EdgeInsets.all(12),
                 border: OutlineInputBorder(
                   borderRadius:
                       BorderRadius.circular(50), // Define the border radius
-                  borderSide: BorderSide(color: Color(0xFF959595), width: 1),
+                  borderSide:
+                      const BorderSide(color: Color(0xFF959595), width: 1),
                 ),
               ),
             ),
@@ -113,9 +116,10 @@ class _HelpCenterState extends State<HelpCenter> {
                 child: Text(
                   "Submit",
                   style: TextStyle(
-                      color: Color(0xFFFFFFFF),
-                      fontSize: 16,
-                      fontWeight: FontWeight.w600),
+                    color: Color(0xFFFFFFFF),
+                    fontSize: 16,
+                    fontWeight: FontWeight.w600,
+                  ),
                 ),
               ),
             ),
