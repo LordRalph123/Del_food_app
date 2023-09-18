@@ -99,6 +99,7 @@ class _HelpCenterState extends State<HelpCenter> {
               ),
             ),
           ),
+          SizedBox(height: 105),
         ],
       ),
     );
