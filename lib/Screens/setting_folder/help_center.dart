@@ -58,6 +58,47 @@ class _HelpCenterState extends State<HelpCenter> {
             ),
           ),
           SizedBox(height: 15),
+          Text(
+            "Email address",
+            style: TextStyle(),
+          ),
+          Container(
+            width: 325, // Define the width
+            height: 50, // Define the height
+            child: TextField(
+              decoration: InputDecoration(
+                filled: true,
+                fillColor: Colors.white,
+                contentPadding: EdgeInsets.all(12),
+                border: OutlineInputBorder(
+                  borderRadius:
+                      BorderRadius.circular(50), // Define the border radius
+                  borderSide: BorderSide(color: Color(0xFF959595), width: 1),
+                ),
+              ),
+            ),
+          ),
+          SizedBox(height: 15),
+          Text(
+            "Tell us something",
+            style: TextStyle(),
+          ),
+          Container(
+            width: 325, // Define the width
+            height: 226, // Define the height
+            child: TextField(
+              decoration: InputDecoration(
+                filled: true,
+                fillColor: Colors.white,
+                contentPadding: EdgeInsets.all(12),
+                border: OutlineInputBorder(
+                  borderRadius:
+                      BorderRadius.circular(50), // Define the border radius
+                  borderSide: BorderSide(color: Color(0xFF959595), width: 1),
+                ),
+              ),
+            ),
+          ),
         ],
       ),
     );
