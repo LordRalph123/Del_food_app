@@ -36,10 +36,27 @@ class _HelpCenterState extends State<HelpCenter> {
               color: Color(0xFF5A5A5A),
             ),
           ),
+          SizedBox(height: 26),
           Text(
             "Name",
             style: TextStyle(),
-          )
+          ),
+          Container(
+            width: 200, // Define the width
+            height: 50, // Define the height
+            child: TextField(
+              decoration: InputDecoration(
+                filled: true,
+                fillColor: Colors.white,
+                contentPadding: EdgeInsets.all(12),
+                border: OutlineInputBorder(
+                  borderRadius:
+                      BorderRadius.circular(25), // Define the border radius
+                  borderSide: BorderSide(color: Colors.blue, width: 2),
+                ),
+              ),
+            ),
+          ),
         ],
       ),
     );
