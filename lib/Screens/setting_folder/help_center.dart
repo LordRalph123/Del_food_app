@@ -78,12 +78,12 @@ class _HelpCenterState extends State<HelpCenter> {
               ),
             ),
           ),
-          SizedBox(height: 15),
-          Text(
+          const SizedBox(height: 15),
+          const Text(
             "Tell us something",
             style: TextStyle(),
           ),
-          Container(
+          const Container(
             width: 325, // Define the width
             height: 226, // Define the height
             child: TextField(
@@ -99,7 +99,7 @@ class _HelpCenterState extends State<HelpCenter> {
               ),
             ),
           ),
-          SizedBox(height: 105),
+          const SizedBox(height: 105),
           MaterialButton(
             onPressed: () {},
             child: Container(
