@@ -35,6 +35,10 @@ class _HelpCenterState extends State<HelpCenter> {
               fontSize: 14,
               color: Color(0xFF5A5A5A),
             ),
+          ),
+          Text(
+            "Name",
+            style: TextStyle(),
           )
         ],
       ),
