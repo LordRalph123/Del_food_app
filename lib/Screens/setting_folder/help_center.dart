@@ -42,7 +42,7 @@ class _HelpCenterState extends State<HelpCenter> {
             style: TextStyle(),
           ),
           Container(
-            width: 200, // Define the width
+            width: 325, // Define the width
             height: 50, // Define the height
             child: TextField(
               decoration: InputDecoration(
@@ -51,8 +51,8 @@ class _HelpCenterState extends State<HelpCenter> {
                 contentPadding: EdgeInsets.all(12),
                 border: OutlineInputBorder(
                   borderRadius:
-                      BorderRadius.circular(25), // Define the border radius
-                  borderSide: BorderSide(color: Colors.blue, width: 2),
+                      BorderRadius.circular(50), // Define the border radius
+                  borderSide: BorderSide(color: Color(0xFF959595), width: 1),
                 ),
               ),
             ),
