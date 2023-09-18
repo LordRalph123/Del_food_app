@@ -29,8 +29,9 @@ class _DailyFoodTipsState extends State<DailyFoodTips> {
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Image(
-            image: AssetImage("assets/"),
+          Container(
+            constraints: BoxConstraints(maxWidth: 344.0, maxHeight: 344.0),
+            child: Image.asset('assets/your_image.png', fit: BoxFit.cover),
           ),
           SizedBox(height: 64),
           Align(
@@ -41,8 +42,9 @@ class _DailyFoodTipsState extends State<DailyFoodTips> {
             ),
           ),
           Text(
-              "Eating fruits efore a meal is dangerous as it can\n cause indigestion, flatulence or heartburn and\n this is because fruits need more time to digest.",
-              style: TextStyle())
+            "Eating fruits efore a meal is dangerous as it can\n cause indigestion, flatulence or heartburn and\n this is because fruits need more time to digest.",
+            style: TextStyle(),
+          ),
         ],
       ),
     );
