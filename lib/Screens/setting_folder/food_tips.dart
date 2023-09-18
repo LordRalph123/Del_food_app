@@ -32,6 +32,11 @@ class _DailyFoodTipsState extends State<DailyFoodTips> {
           Image(
             image: AssetImage("assets/"),
           ),
+          SizedBox(height: 64),
+          Text(
+            "Do you know?",
+            style: TextStyle(),
+          ),
         ],
       ),
     );
