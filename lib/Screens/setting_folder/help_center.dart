@@ -31,7 +31,10 @@ class _HelpCenterState extends State<HelpCenter> {
         children: [
           Text(
             "Have issues making an order or making use\n of our app? mail us at care@delfoods.ng or\n drop amessage for us below.",
-            style: TextStyle(),
+            style: TextStyle(
+              fontSize: 14,
+              color: Color(0xFF5A5A5A),
+            ),
           )
         ],
       ),
