@@ -100,6 +100,26 @@ class _HelpCenterState extends State<HelpCenter> {
             ),
           ),
           SizedBox(height: 105),
+          MaterialButton(
+            onPressed: () {},
+            child: Container(
+              width: 376,
+              height: 50,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(50),
+                color: const Color(0xFF959595),
+              ),
+              child: const Center(
+                child: Text(
+                  "Submit",
+                  style: TextStyle(
+                      color: Color(0xFFFFFFFF),
+                      fontSize: 16,
+                      fontWeight: FontWeight.w600),
+                ),
+              ),
+            ),
+          ),
         ],
       ),
     );
