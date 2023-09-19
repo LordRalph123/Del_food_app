@@ -11,7 +11,7 @@ class Onboarding extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       home: IntroPage(),
-      debugShowCheckedModeBanner: true,
+      debugShowCheckedModeBanner: false,
     );
   }
 }
