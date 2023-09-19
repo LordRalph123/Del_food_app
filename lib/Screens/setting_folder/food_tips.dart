@@ -30,18 +30,18 @@ class _DailyFoodTipsState extends State<DailyFoodTips> {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Container(
-            constraints: BoxConstraints(maxWidth: 344.0, maxHeight: 344.0),
+            constraints:const BoxConstraints(maxWidth: 344.0, maxHeight: 344.0),
             child: Image.asset('assets/your_image.png', fit: BoxFit.cover),
           ),
-          SizedBox(height: 64),
-          Align(
+          const SizedBox(height: 64),
+         const Align(
             alignment: Alignment.center,
             child: Text(
               "Do you know?",
               style: TextStyle(),
             ),
           ),
-          Text(
+         const Text(
             "Eating fruits efore a meal is dangerous as it can\n cause indigestion, flatulence or heartburn and\n this is because fruits need more time to digest.",
             style: TextStyle(),
           ),
