@@ -11,6 +11,7 @@ class _PaymentMethodState extends State<PaymentMethod> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         leading: IconButton(
           onPressed: () {},
