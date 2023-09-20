@@ -30,9 +30,19 @@ class _EditProfileState extends State<EditProfile> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const CircleAvatar(
-              backgroundImage: AssetImage("asset/"),
-              radius: 100,
+            const Stack(
+              alignment: Alignment.bottomRight,
+              children: [
+                CircleAvatar(
+                  radius: 50,
+                  backgroundImage: AssetImage('assets/profile_picture.jpg'),
+                ),
+                Icon(
+                  Icons.camera_alt,
+                  color: Color(0xFFFA9B0D),
+                  size: 24,
+                ),
+              ],
             ),
             const SizedBox(height: 12),
             const Text(
