@@ -97,20 +97,24 @@ class _LoginScreenState extends State<LoginScreen> {
               fontWeight: FontWeight.w600,
             ),
           ),
-          Container(
-            width: 376,
-            height: 50,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(50),
-              color: const Color(0xFF959595),
-            ),
-            child: const Center(
-              child: Text(
-                "Login",
-                style: TextStyle(
-                    color: Color(0xFFFFFFFF),
-                    fontSize: 16,
-                    fontWeight: FontWeight.w600),
+          MaterialButton(
+            color: _isFilled ? Colors.green : Colors.grey,
+            onPressed: () {},
+            child: Container(
+              width: 376,
+              height: 50,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(50),
+                color: const Color(0xFF959595),
+              ),
+              child: const Center(
+                child: Text(
+                  "Login",
+                  style: TextStyle(
+                      color: Color(0xFFFFFFFF),
+                      fontSize: 16,
+                      fontWeight: FontWeight.w600),
+                ),
               ),
             ),
           ),
