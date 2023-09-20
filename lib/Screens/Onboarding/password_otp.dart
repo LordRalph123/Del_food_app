@@ -15,8 +15,8 @@ class otp extends StatefulWidget {
 }
 
 class _otpState extends State<otp> {
-  TextEditingController textEditingController = TextEditingController();
-  // ..text = "123456";
+  TextEditingController _controller = TextEditingController();
+  bool _isFilled = false;
 
   // ignore: close_sinks
   StreamController<ErrorAnimationType>? errorController;
@@ -110,7 +110,7 @@ class _otpState extends State<otp> {
                 animationDuration: const Duration(milliseconds: 300),
                 enableActiveFill: true,
                 errorAnimationController: errorController,
-                controller: textEditingController,
+                controller: _controller,
                 keyboardType: TextInputType.number,
                 boxShadows: const [
                   BoxShadow(
