@@ -11,6 +11,23 @@ class _LoginScreenState extends State<LoginScreen> {
   TextEditingController _controller = TextEditingController();
   bool _isFilled = false;
   @override
+  void initState() {
+    super.initState();
+
+    _controller.addListener(() {
+      if (_controller.text.isNotEmpty && !_isFilled) {
+        setState(() {
+          _isFilled = true;
+        });
+      } else if (_controller.text.isEmpty && _isFilled) {
+        setState(() {
+          _isFilled = false;
+        });
+      }
+    });
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
