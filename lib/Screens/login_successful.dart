@@ -15,14 +15,17 @@ class _LoginSuccessfulState extends State<LoginSuccessful> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Icon(
+            const Icon(
               Icons.check_circle,
               color: Color(0xFFFA9B0D),
               size: 129,
             ),
-            SizedBox(height: 25),
-            Text("Yay, you have successfully\n created your new password"),
-            SizedBox(height: 300),
+            const SizedBox(height: 25),
+            const Text(
+              "Yay, you have successfully\n created your new password",
+              style: TextStyle(),
+            ),
+            const SizedBox(height: 300),
             Container(
               width: 376,
               height: 50,

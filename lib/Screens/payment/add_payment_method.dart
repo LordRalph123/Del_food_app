@@ -29,13 +29,19 @@ class _AddPaymentMethodState extends State<AddPaymentMethod> {
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text("Card holder name"),
+          const Text(
+            "Card holder name",
+            style: TextStyle(fontSize: 14, color: Colors.black12),
+          ),
           Container(
             width: 376,
             height: 50,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(50),
-              border: Border.all(color: Colors.grey, width: 1),
+              border: Border.all(
+                color: Colors.grey,
+                width: 1,
+              ),
             ),
             child: const TextField(
               decoration: InputDecoration(
@@ -43,13 +49,22 @@ class _AddPaymentMethodState extends State<AddPaymentMethod> {
               ),
             ),
           ),
-          Text("Card number"),
+          const Text(
+            "Card number",
+            style: TextStyle(
+              fontSize: 14,
+              color: Colors.black,
+            ),
+          ),
           Container(
             width: 376,
             height: 50,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(50),
-              border: Border.all(color: Colors.grey, width: 1),
+              border: Border.all(
+                color: Colors.grey,
+                width: 1,
+              ),
             ),
             child: const TextField(
               decoration: InputDecoration(
@@ -62,7 +77,10 @@ class _AddPaymentMethodState extends State<AddPaymentMethod> {
             children: [
               Column(
                 children: [
-                  Text("Exp date"),
+                  const Text(
+                    "Exp date",
+                    style: TextStyle(fontSize: 14, color: Colors.black),
+                  ),
                   Container(
                     width: 156,
                     height: 50,
@@ -78,16 +96,22 @@ class _AddPaymentMethodState extends State<AddPaymentMethod> {
                   ),
                 ],
               ),
-              SizedBox(width: 64),
+              const SizedBox(width: 64),
               Column(
                 children: [
-                  Text("Cvv"),
+                  const Text(
+                    "CVV",
+                    style: TextStyle(),
+                  ),
                   Container(
                     width: 156,
                     height: 50,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(50),
-                      border: Border.all(color: Colors.grey, width: 1),
+                      border: Border.all(
+                        color: Colors.grey,
+                        width: 1,
+                      ),
                     ),
                     child: const TextField(
                       decoration: InputDecoration(
@@ -99,7 +123,7 @@ class _AddPaymentMethodState extends State<AddPaymentMethod> {
               ),
             ],
           ),
-          SizedBox(height: 64),
+          const SizedBox(height: 64),
           MaterialButton(
             onPressed: () {},
             child: Container(
@@ -113,9 +137,10 @@ class _AddPaymentMethodState extends State<AddPaymentMethod> {
                 child: Text(
                   "Save",
                   style: TextStyle(
-                      color: Color(0xFFFFFFFF),
-                      fontSize: 16,
-                      fontWeight: FontWeight.w600),
+                    color: Color(0xFFFFFFFF),
+                    fontSize: 16,
+                    fontWeight: FontWeight.w600,
+                  ),
                 ),
               ),
             ),

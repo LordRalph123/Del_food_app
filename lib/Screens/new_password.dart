@@ -14,21 +14,24 @@ class _NewPassWordScreenState extends State<NewPassWordScreen> {
       appBar: AppBar(
         leading: IconButton(
           onPressed: () {},
-          icon: Icon(Icons.cancel, size: 24),
+          icon: const Icon(Icons.cancel, size: 24),
         ),
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text(
+          const Text(
             "New Password",
             style: TextStyle(
                 color: Color(0xFF332E28),
                 fontSize: 24,
                 fontWeight: FontWeight.w700),
           ),
-          Text("You've been verified, kindly\n create a new password"),
-          SizedBox(height: 54),
+          const Text(
+            "You've been verified, kindly\n create a new password",
+            style: TextStyle(fontSize: 16, color: Colors.black),
+          ),
+          const SizedBox(height: 54),
           const Text(
             "Password",
             style: TextStyle(),
@@ -49,7 +52,7 @@ class _NewPassWordScreenState extends State<NewPassWordScreen> {
               )),
             ),
           ),
-          SizedBox(height: 25),
+          const SizedBox(height: 25),
           const Text(
             "Confirm Password",
             style: TextStyle(),

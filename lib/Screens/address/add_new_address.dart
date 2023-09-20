@@ -14,7 +14,10 @@ class _AddNewAddressState extends State<AddNewAddress> {
       appBar: AppBar(
         leading: IconButton(
           onPressed: () {},
-          icon: const Icon(Icons.arrow_back, size: 24),
+          icon: const Icon(
+            Icons.arrow_back,
+            size: 24,
+          ),
         ),
         title: const Text(
           "Add new address",
@@ -30,16 +33,23 @@ class _AddNewAddressState extends State<AddNewAddress> {
         children: [
           TextField(
             decoration: InputDecoration(
-                labelText: "14, Mission street, Oja Oba, Akure",
-                labelStyle: TextStyle(),
-                prefixIcon: IconButton(
-                    onPressed: () {},
-                    icon: Icon(
-                      Icons.arrow_back,
-                    )),
-                suffixIcon:
-                    IconButton(onPressed: () {}, icon: Icon(Icons.cancel))),
-          )
+              labelText: "14, Mission street, Oja Oba, Akure",
+              labelStyle: const TextStyle(),
+              prefixIcon: IconButton(
+                onPressed: () {},
+                icon: const Icon(
+                  Icons.arrow_back,
+                ),
+              ),
+              suffixIcon: IconButton(
+                onPressed: () {},
+                icon: const Icon(
+                  Icons.cancel,
+                  size: 24,
+                ),
+              ),
+            ),
+          ),
         ],
       ),
     );

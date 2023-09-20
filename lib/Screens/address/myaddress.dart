@@ -14,7 +14,10 @@ class _MyaddressState extends State<Myaddress> {
       appBar: AppBar(
         leading: IconButton(
           onPressed: () {},
-          icon: const Icon(Icons.arrow_back, size: 24),
+          icon: const Icon(
+            Icons.arrow_back,
+            size: 24,
+          ),
         ),
         title: const Text(
           "My Address",
@@ -34,16 +37,22 @@ class _MyaddressState extends State<Myaddress> {
             decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(10),
-                border: Border.all(color: Color(0xFF959595), width: 1)),
-            child: Row(
+                border: Border.all(color: const Color(0xFF959595), width: 1)),
+            child: const Row(
               children: [
                 Icon(Icons.location_on_outlined),
-                Text("Mission Street, Oja Oba, Akure"),
-                Icon(Icons.more_vert),
+                Text(
+                  "Mission Street, Oja Oba, Akure",
+                  style: TextStyle(),
+                ),
+                Icon(
+                  Icons.more_vert,
+                  size: 24,
+                ),
               ],
             ),
           ),
-          SizedBox(height: 577),
+          const SizedBox(height: 577),
           MaterialButton(
             onPressed: () {},
             child: Container(
@@ -57,9 +66,10 @@ class _MyaddressState extends State<Myaddress> {
                 child: Text(
                   "+ Add new address",
                   style: TextStyle(
-                      color: Color(0xFFFFFFFF),
-                      fontSize: 16,
-                      fontWeight: FontWeight.w600),
+                    color: Color(0xFFFFFFFF),
+                    fontSize: 16,
+                    fontWeight: FontWeight.w600,
+                  ),
                 ),
               ),
             ),

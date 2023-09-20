@@ -14,13 +14,13 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
       appBar: AppBar(
         leading: IconButton(
           onPressed: () {},
-          icon: Icon(Icons.arrow_back, size: 24),
+          icon: const Icon(Icons.arrow_back, size: 24),
         ),
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text(
+          const Text(
             "New Password",
             style: TextStyle(
                 color: Color(0xFF332E28),
@@ -28,8 +28,10 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
                 fontWeight: FontWeight.w700),
           ),
           const Text(
-              "Don't worry, in just a few simple steps your\n account will be back in the game"),
-          SizedBox(height: 54),
+            "Don't worry, in just a few simple steps your\n account will be back in the game",
+            style: TextStyle(),
+          ),
+          const SizedBox(height: 54),
           const Text(
             "Email address",
             style: TextStyle(),
@@ -42,7 +44,7 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
               borderRadius: BorderRadius.circular(50),
               border: Border.all(color: Colors.grey, width: 1),
             ),
-            child: TextField(),
+            child: const TextField(),
           ),
           const SizedBox(height: 25),
           Container(

@@ -34,15 +34,18 @@ class _PaymentMethodState extends State<PaymentMethod> {
             decoration: BoxDecoration(
               color: Colors.white,
               borderRadius: BorderRadius.circular(10),
-              border: Border.all(color: Color(0xFF959595), width: 1),
+              border: Border.all(
+                color: const Color(0xFF959595),
+                width: 1,
+              ),
             ),
             child: Center(
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Image(
-                    image: AssetImage("assets/"),
+                  const Image(
+                    image: AssetImage("assets/mastercard.jpg"),
                   ),
                   const SizedBox(width: 21),
                   const Text(
@@ -52,10 +55,13 @@ class _PaymentMethodState extends State<PaymentMethod> {
                         fontSize: 16,
                         fontWeight: FontWeight.w400),
                   ),
-                  SizedBox(width: 35),
+                  const SizedBox(width: 35),
                   IconButton(
                     onPressed: () {},
-                    icon: Icon(Icons.arrow_forward_ios),
+                    icon: const Icon(
+                      Icons.arrow_forward_ios,
+                      size: 24,
+                    ),
                   ),
                 ],
               ),
@@ -67,26 +73,34 @@ class _PaymentMethodState extends State<PaymentMethod> {
             decoration: BoxDecoration(
               color: Colors.white,
               borderRadius: BorderRadius.circular(10),
-              border: Border.all(color: Color(0xFF959595), width: 1),
+              border: Border.all(
+                color: const Color(0xFF959595),
+                width: 1,
+              ),
             ),
             child: Center(
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Image(
-                    image: AssetImage("assets/"),
+                  const Image(
+                    image: AssetImage(
+                      "assets/paypal.jpg",
+                    ),
                   ),
                   const Text(
                     "Add PaypaL Account",
                     style: TextStyle(
-                        color: Color(0xFF332E28),
-                        fontSize: 16,
-                        fontWeight: FontWeight.w400),
+                      color: Color(0xFF332E28),
+                      fontSize: 16,
+                      fontWeight: FontWeight.w400,
+                    ),
                   ),
                   IconButton(
                     onPressed: () {},
-                    icon: Icon(Icons.arrow_forward_ios),
+                    icon: const Icon(
+                      Icons.arrow_forward_ios,
+                    ),
                   ),
                 ],
               ),

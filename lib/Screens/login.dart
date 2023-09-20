@@ -169,12 +169,19 @@ class _LoginScreenState extends State<LoginScreen> {
             height: 50,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(50),
-              border: Border.all(color: Colors.grey, width: 1),
+              border: Border.all(
+                color: Colors.grey,
+                width: 1,
+              ),
             ),
             child: const Center(
               child: Row(
                 children: [
-                  Image(image: AssetImage("asset/facebook.jpg")),
+                  Image(
+                    image: AssetImage(
+                      "asset/facebook.jpg",
+                    ),
+                  ),
                   SizedBox(width: 24),
                   Text(
                     "Sign up with Facebook",

@@ -14,7 +14,10 @@ class _MyAddressState extends State<MyAddress> {
       appBar: AppBar(
         leading: IconButton(
           onPressed: () {},
-          icon: const Icon(Icons.arrow_back, size: 24),
+          icon: const Icon(
+            Icons.arrow_back,
+            size: 24,
+          ),
         ),
         title: const Text(
           "My Address",
@@ -29,11 +32,17 @@ class _MyAddressState extends State<MyAddress> {
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Image(image: AssetImage("assets/")),
-          SizedBox(height: 24),
-          Text(
-              "You have not added any address yet,\n Kindly login to add your address"),
-          SizedBox(height: 217),
+          const Image(
+            image: AssetImage(
+              "assets/Address.jpg",
+            ),
+          ),
+          const SizedBox(height: 24),
+          const Text(
+            "You have not added any address yet,\n Kindly login to add your address",
+            style: TextStyle(),
+          ),
+          const SizedBox(height: 217),
           MaterialButton(
             onPressed: () {},
             child: Container(

@@ -36,7 +36,7 @@ class _MyPaymentMethodState extends State<MyPaymentMethod> {
               borderRadius: BorderRadius.circular(50),
               border: Border.all(color: Colors.grey, width: 1),
             ),
-            child: Center(
+            child: const Center(
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
@@ -49,7 +49,7 @@ class _MyPaymentMethodState extends State<MyPaymentMethod> {
               ),
             ),
           ),
-          SizedBox(height: 480),
+          const SizedBox(height: 480),
           MaterialButton(
             onPressed: () {},
             child: Container(
@@ -63,9 +63,10 @@ class _MyPaymentMethodState extends State<MyPaymentMethod> {
                 child: Text(
                   "+ Add payment method",
                   style: TextStyle(
-                      color: Color(0xFFFFFFFF),
-                      fontSize: 16,
-                      fontWeight: FontWeight.w600),
+                    color: Color(0xFFFFFFFF),
+                    fontSize: 16,
+                    fontWeight: FontWeight.w600,
+                  ),
                 ),
               ),
             ),
