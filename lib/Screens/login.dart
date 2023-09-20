@@ -62,7 +62,7 @@ class _LoginScreenState extends State<LoginScreen> {
               borderRadius: BorderRadius.circular(50),
               border: Border.all(color: Colors.grey, width: 1),
             ),
-            child: const TextField(controller: _controller),
+            child: TextField(controller: _controller),
           ),
           const SizedBox(height: 25),
           const Text(
