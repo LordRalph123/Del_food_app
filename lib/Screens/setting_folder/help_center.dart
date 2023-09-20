@@ -48,7 +48,7 @@ class _HelpCenterState extends State<HelpCenter> {
               decoration: InputDecoration(
                 filled: true,
                 fillColor: Colors.white,
-                contentPadding: EdgeInsets.all(12),
+                contentPadding: const EdgeInsets.all(12),
                 border: OutlineInputBorder(
                   borderRadius:
                       BorderRadius.circular(50), // Define the border radius
