@@ -45,9 +45,9 @@ class _EditProfileState extends State<EditProfile> {
               ],
             ),
             const SizedBox(height: 12),
-            Align(
+            const Align(
               alignment: Alignment.center,
-              child: const Text(
+              child: Text(
                 "Daniel Davies",
                 style: TextStyle(
                     fontSize: 14,
