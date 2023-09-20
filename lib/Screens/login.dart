@@ -62,7 +62,7 @@ class _LoginScreenState extends State<LoginScreen> {
               borderRadius: BorderRadius.circular(50),
               border: Border.all(color: Colors.grey, width: 1),
             ),
-            child: const TextField(),
+            child: const TextField(controller: _controller),
           ),
           const SizedBox(height: 25),
           const Text(
@@ -98,7 +98,7 @@ class _LoginScreenState extends State<LoginScreen> {
             ),
           ),
           MaterialButton(
-            color: _isFilled ? Colors.green : Colors.grey,
+            color: _isFilled ? Color(0xFFFA9B0D) : Color(0xFF959595),
             onPressed: () {},
             child: Container(
               width: 376,
