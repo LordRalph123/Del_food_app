@@ -41,7 +41,7 @@ class _otpState extends State<otp> {
   }
 
   @override
-  void initStater() {
+  void initStated() {
     errorController = StreamController<ErrorAnimationType>();
     super.initState();
   }
