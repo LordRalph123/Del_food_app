@@ -148,8 +148,9 @@ class _otpState extends State<otp> {
                 },
                 beforeTextPaste: (text) {
                   debugPrint("Allows you to paste $text");
-                  //if you return true then it will show the paste confirmation dialog. Otherwise if false, then nothing will happen.
-                  //but you can show anything you want here, like your pop up saying wrong paste format or etc
+
+                  ///if you return true then it will show the paste confirmation dialog. Otherwise if false, then nothing will happen.
+                  ///but you can show anything you want here, like your pop up saying wrong paste format or etc
                   return true;
                 },
               ),
