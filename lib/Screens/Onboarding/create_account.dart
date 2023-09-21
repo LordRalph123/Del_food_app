@@ -1,7 +1,31 @@
 import 'package:flutter/material.dart';
 
-class CreateAccount extends StatelessWidget {
+class CreateAccount extends StatefulWidget {
   const CreateAccount({super.key});
+
+  @override
+  State<CreateAccount> createState() => _CreateAccountState();
+}
+
+class _CreateAccountState extends State<CreateAccount> {
+  TextEditingController _controller = TextEditingController();
+  bool _isFilled = false;
+  @override
+  void initState() {
+    super.initState();
+
+    _controller.addListener(() {
+      if (_controller.text.isNotEmpty && !_isFilled) {
+        setState(() {
+          _isFilled = true;
+        });
+      } else if (_controller.text.isEmpty && _isFilled) {
+        setState(() {
+          _isFilled = false;
+        });
+      }
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +50,11 @@ class CreateAccount extends StatelessWidget {
                   borderRadius: BorderRadius.circular(50),
                   border: Border.all(color: Colors.grey, width: 1),
                 ),
-                child: const TextField(),
+                child: TextField(
+                  controller: _controller,
+                  decoration:
+                      InputDecoration(hintText: "", hintStyle: TextStyle()),
+                ),
               ),
               const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
