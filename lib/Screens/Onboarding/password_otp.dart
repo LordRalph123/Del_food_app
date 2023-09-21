@@ -53,7 +53,7 @@ class _otpState extends State<otp> {
     super.dispose();
   }
 
-  //asnackBar Widget
+  //snackBar Widget
   snackBar(String? message) {
     return ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
