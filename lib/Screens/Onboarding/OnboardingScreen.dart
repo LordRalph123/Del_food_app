@@ -98,7 +98,7 @@ class _IntroPageState extends State<IntroPage> {
               onPressed: () async {
                 Navigator.of(context).pushReplacement(
                   MaterialPageRoute(
-                    builder: (context) => const SecondOnboarding(),
+                    builder: (context) => const CreateAccount(),
                   ),
                 );
               },
