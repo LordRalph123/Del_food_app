@@ -18,15 +18,30 @@ class _otpState extends State<otp> {
   TextEditingController _controller = TextEditingController();
   bool _isFilled = false;
 
-  // ignore: close_sinks
   StreamController<ErrorAnimationType>? errorController;
 
   bool hasError = false;
   String currentText = "";
   final formKey = GlobalKey<FormState>();
-
   @override
   void initState() {
+    super.initState();
+
+    _controller.addListener(() {
+      if (_controller.text.isNotEmpty && !_isFilled) {
+        setState(() {
+          _isFilled = true;
+        });
+      } else if (_controller.text.isEmpty && _isFilled) {
+        setState(() {
+          _isFilled = false;
+        });
+      }
+    });
+  }
+
+  @override
+  void initStater() {
     errorController = StreamController<ErrorAnimationType>();
     super.initState();
   }
@@ -79,6 +94,7 @@ class _otpState extends State<otp> {
                 horizontal: 30,
               ),
               child: PinCodeTextField(
+                controller: _controller,
                 appContext: context,
                 pastedTextStyle: TextStyle(
                   color: Colors.green.shade600,
@@ -110,7 +126,6 @@ class _otpState extends State<otp> {
                 animationDuration: const Duration(milliseconds: 300),
                 enableActiveFill: true,
                 errorAnimationController: errorController,
-                controller: _controller,
                 keyboardType: TextInputType.number,
                 boxShadows: const [
                   BoxShadow(
