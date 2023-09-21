@@ -37,7 +37,7 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
           const SizedBox(height: 54),
           const Text(
             "Email address",
-            style: TextStyle(),
+            style: TextStyle(fontSize: 14, color: Colors.black),
           ),
           const SizedBox(height: 3),
           Container(
