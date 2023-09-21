@@ -47,7 +47,7 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
               borderRadius: BorderRadius.circular(50),
               border: Border.all(color: Colors.grey, width: 1),
             ),
-            child: TextField(),
+            child: TextField(controller: _controller),
           ),
           const SizedBox(height: 25),
           Container(
