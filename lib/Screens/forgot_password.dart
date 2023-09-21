@@ -32,7 +32,7 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
           ),
           const Text(
             "Don't worry, in just a few simple steps your\n account will be back in the game",
-            style: TextStyle(),
+            style: TextStyle(fontSize: 14, color: Colors.black),
           ),
           const SizedBox(height: 54),
           const Text(
