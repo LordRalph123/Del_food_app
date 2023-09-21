@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
 import 'dart:async';
 
+import '../payment/add_payment_method.dart';
+
 class otp extends StatefulWidget {
   const otp({
     Key? key,
@@ -166,6 +168,11 @@ class _otpState extends State<otp> {
                 errorController!.add(ErrorAnimationType.shake);
                 //Triggering error shake animation
                 setState(() => hasError = true);
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const AddPaymentMethod()),
+                );
               } else {
                 setState(
                   () {
