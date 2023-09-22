@@ -52,8 +52,8 @@ class _CreateAccountState extends State<CreateAccount> {
                 ),
                 child: TextField(
                   controller: _controller,
-                  decoration:
-                      InputDecoration(hintText: "", hintStyle: TextStyle()),
+                  decoration: const InputDecoration(
+                      hintText: "", hintStyle: TextStyle()),
                 ),
               ),
               const Row(
