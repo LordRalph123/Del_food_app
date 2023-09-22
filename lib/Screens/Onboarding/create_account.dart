@@ -58,7 +58,13 @@ class _CreateAccountState extends State<CreateAccount> {
               ),
               const Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [Text("Birthday", style: ,), Text("MM/DD/YYYY")],
+                children: [
+                  Text(
+                    "Birthday",
+                    style: TextStyle(),
+                  ),
+                  Text("MM/DD/YYYY")
+                ],
               ),
               Container(
                 width: 376,
