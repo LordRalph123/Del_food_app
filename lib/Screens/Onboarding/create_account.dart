@@ -63,7 +63,10 @@ class _CreateAccountState extends State<CreateAccount> {
                     "Birthday",
                     style: TextStyle(),
                   ),
-                  Text("MM/DD/YYYY")
+                  Text(
+                    "MM/DD/YYYY",
+                    style: TextStyle(),
+                  )
                 ],
               ),
               Container(
