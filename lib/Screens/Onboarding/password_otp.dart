@@ -68,7 +68,7 @@ class _otpState extends State<otp> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0XFFFFFFF),
+      backgroundColor: Color(0XFFFFFFFF)
       appBar: AppBar(
         leading: IconButton(
           onPressed: () {},
