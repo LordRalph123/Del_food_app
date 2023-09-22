@@ -78,7 +78,7 @@ class _CreateAccountState extends State<CreateAccount> {
               ),
               const Text(
                 "Email address",
-                style: TextStyle(fontSize:, fontWeight:  ),
+                style: TextStyle(fontSize: 14, fontWeight: FontWeight.w500),
               ),
               const SizedBox(height: 3),
               Container(
