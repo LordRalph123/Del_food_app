@@ -30,7 +30,7 @@ class _CreateAccountState extends State<CreateAccount> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Color(0XFFFFFFFF),
       appBar: AppBar(
         title: const Text("Create Your Account"),
       ),
