@@ -162,7 +162,7 @@ class _CreateAccountState extends State<CreateAccount> {
                 width: 376,
                 height: 50,
                 decoration: BoxDecoration(
-                  color: ,
+                  color: Colors.white,
                   borderRadius: BorderRadius.circular(50),
                   border: Border.all(color: const Color(0xFFFA9B0D), width: 1),
                 ),
