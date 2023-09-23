@@ -32,7 +32,7 @@ class _CreateAccountState extends State<CreateAccount> {
     return Scaffold(
       backgroundColor: const Color(0XFFFFFFFF),
       appBar: AppBar(
-        title: const Text("Create Your Account"),
+        title: const Text("Create Your Account", style: ,),
       ),
       body: SingleChildScrollView(
         child: Container(
