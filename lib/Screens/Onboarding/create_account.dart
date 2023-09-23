@@ -40,7 +40,7 @@ class _CreateAccountState extends State<CreateAccount> {
             children: [
               const Text(
                 "Full name",
-                style: TextStyle(),
+                style: TextStyle(fontSize: 14),
               ),
               const SizedBox(height: 3),
               Container(
