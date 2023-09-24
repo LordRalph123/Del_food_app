@@ -59,7 +59,7 @@ flutter_native_splash:
         color: "#FFFFFF"
         image: assets/first.jpg
         android: true
-        ios: true
+        
 
 flutter:
 
