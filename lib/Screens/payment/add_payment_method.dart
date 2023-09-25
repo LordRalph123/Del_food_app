@@ -69,6 +69,8 @@ class _AddPaymentMethodState extends State<AddPaymentMethod> {
             ),
             child: const TextField(
               decoration: InputDecoration(
+                hintText: "Daniel Davies Deuel",
+                hintStyle: TextStyle(),
                 fillColor: Colors.white,
               ),
             ),
