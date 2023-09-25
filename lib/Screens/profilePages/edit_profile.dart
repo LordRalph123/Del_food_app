@@ -82,7 +82,7 @@ class _EditProfileState extends State<EditProfile> {
                 ),
               ),
             ),
-            SizedBox(height: 25),
+            const SizedBox(height: 25),
             const Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
