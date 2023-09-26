@@ -81,30 +81,29 @@ class _PaymentMethodState extends State<PaymentMethod> {
             ),
             child: Center(
               child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
-                  const Image(
-                    image: AssetImage(
-                      "assets/paypal.jpg",
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    const Image(
+                      image: AssetImage(
+                        "assets/paypal.jpg",
+                      ),
                     ),
-                  ),
-                  const Text(
-                    "Add PaypaL Account",
-                    style: TextStyle(
-                      color: Color(0xFF332E28),
-                      fontSize: 16,
-                      fontWeight: FontWeight.w400,
+                    const Text(
+                      "Add PaypaL Account",
+                      style: TextStyle(
+                        color: Color(0xFF332E28),
+                        fontSize: 16,
+                        fontWeight: FontWeight.w400,
+                      ),
                     ),
-                  ),
-                  IconButton(
-                    onPressed: () {},
-                    icon: const Icon(
-                      Icons.arrow_forward_ios,
+                    IconButton(
+                      onPressed: () {},
+                      icon: const Icon(
+                        Icons.arrow_forward_ios,
+                      ),
                     ),
-                  ),
-                ],
-              ),
+                  ]),
             ),
           ),
         ],
