@@ -140,7 +140,7 @@ class _otpState extends State<otp> {
                   debugPrint("Completed");
                 },
                 onTap: () {
-                  print("git");
+                  print("github");
                 },
                 onChanged: (value) {
                   debugPrint(value);
