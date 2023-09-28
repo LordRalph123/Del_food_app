@@ -27,6 +27,21 @@ class _CreateAccountState extends State<CreateAccount> {
     });
   }
 
+  TextEditingController _dateController = TextEditingController();
+  _selectDate(BuildContext context) async {
+    DateTime? pickedDate = await showDatePicker(
+      context: context,
+      initialDate: DateTime.now(),
+      firstDate: DateTime(2000),
+      lastDate: DateTime(2101),
+    );
+
+    if (pickedDate != null && pickedDate != DateTime.now())
+      setState(() {
+        _dateController.text = "${pickedDate.toLocal()}".split(' ')[0];
+      });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -89,9 +104,13 @@ class _CreateAccountState extends State<CreateAccount> {
                   border: Border.all(color: Colors.grey, width: 1),
                 ),
                 child: TextField(
+                  readOnly: true,
                   decoration: InputDecoration(
                     suffixIcon: IconButton(
-                      icon: const Icon(Icons.calendar_month),
+                      icon: const Icon(
+                        Icons.calendar_month,
+                        size: 24,
+                      ),
                       onPressed: () {},
                     ),
                   ),
