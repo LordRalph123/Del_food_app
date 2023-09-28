@@ -67,11 +67,17 @@ class _CreateAccountState extends State<CreateAccount> {
                 children: [
                   Text(
                     "Birthday",
-                    style: TextStyle(),
+                    style: TextStyle(
+                        fontSize: 14,
+                        color: Color(0xFF5A5A5A),
+                        fontWeight: FontWeight.w400),
                   ),
                   Text(
                     "MM/DD/YYYY",
-                    style: TextStyle(),
+                    style: TextStyle(
+                        fontSize: 14,
+                        color: Color(0xFFD6D4D1),
+                        fontWeight: FontWeight.w600),
                   )
                 ],
               ),
@@ -93,7 +99,10 @@ class _CreateAccountState extends State<CreateAccount> {
               ),
               const Text(
                 "Email address",
-                style: TextStyle(fontSize: 14, fontWeight: FontWeight.w500),
+                style: TextStyle(
+                    fontSize: 14,
+                    fontWeight: FontWeight.w500,
+                    color: Color(0xFF5A5A5A)),
               ),
               const SizedBox(height: 3),
               Container(
