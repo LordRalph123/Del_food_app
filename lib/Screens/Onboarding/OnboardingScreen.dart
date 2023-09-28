@@ -106,8 +106,9 @@ class _IntroPageState extends State<IntroPage> {
                 width: 276,
                 height: 50,
                 decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(50),
-                    color: const Color(0xFFFA9B0D)),
+                  borderRadius: BorderRadius.circular(50),
+                  color: const Color(0xFFFA9B0D),
+                ),
                 child: const Center(
                   child: Text(
                     "Get started",
@@ -150,8 +151,9 @@ class _IntroPageState extends State<IntroPage> {
                           width: 276,
                           height: 50,
                           decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(50),
-                              color: const Color(0xFFFA9B0D)),
+                            borderRadius: BorderRadius.circular(50),
+                            color: const Color(0xFFFA9B0D),
+                          ),
                           child: const Center(
                             child: Text(
                               "Next",
