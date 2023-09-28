@@ -105,13 +105,16 @@ class _CreateAccountState extends State<CreateAccount> {
                 ),
                 child: TextField(
                   readOnly: true,
+                  controller: _dateController,
                   decoration: InputDecoration(
                     suffixIcon: IconButton(
                       icon: const Icon(
-                        Icons.calendar_month,
+                        Icons.calendar_today,
                         size: 24,
                       ),
-                      onPressed: () {},
+                      onPressed: () {
+                        _selectDate(context);
+                      },
                     ),
                   ),
                 ),
