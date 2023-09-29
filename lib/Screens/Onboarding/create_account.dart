@@ -251,7 +251,6 @@ class _CreateAccountState extends State<CreateAccount> {
                   ),
                   onPressed: () {},
                   child: Container(
-                    // width: 376,
                     height: 50,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(25),
