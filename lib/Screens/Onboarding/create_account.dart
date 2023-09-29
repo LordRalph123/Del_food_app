@@ -196,14 +196,14 @@ class _CreateAccountState extends State<CreateAccount> {
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 25,
                 ),
-                Row(
+                const Row(
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     SizedBox(width: 14),
-                    const Text(
+                    Text(
                       "Password",
                       style: TextStyle(
                         color: Color(0xFF5A5A5A),
@@ -224,7 +224,7 @@ class _CreateAccountState extends State<CreateAccount> {
                   child: TextField(
                     obscureText: _isHidden,
                     decoration: InputDecoration(
-                      contentPadding: EdgeInsets.symmetric(
+                      contentPadding: const EdgeInsets.symmetric(
                           horizontal: 20.0, vertical: 15.0),
                       border: InputBorder.none,
                       enabledBorder: InputBorder.none,
@@ -345,15 +345,15 @@ class _CreateAccountState extends State<CreateAccount> {
                         Container(
                           width: 24.0,
                           height: 24.0,
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                             image: DecorationImage(
                               image: AssetImage("assets/google.jpg"),
                               fit: BoxFit.cover,
                             ),
                           ),
                         ),
-                        SizedBox(width: 25),
-                        Text(
+                        const SizedBox(width: 25),
+                        const Text(
                           "Sign up with Google",
                           style: TextStyle(
                               color: Color(0xFF5A5A5A),
