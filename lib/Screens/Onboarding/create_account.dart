@@ -313,12 +313,13 @@ class _CreateAccountState extends State<CreateAccount> {
                   ),
                 ),
                 const SizedBox(height: 48),
-                const Row(
+                Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    Divider(
-                      color: Color(0xFFD6D4D1),
-                      thickness: 1,
+                    Container(
+                      height: 1,
+                      width: 144,
+                      decoration: BoxDecoration(color: Colors.grey),
                     ),
                     Text(
                       "Or",
@@ -379,7 +380,7 @@ class _CreateAccountState extends State<CreateAccount> {
                         Container(
                           width: 24.0,
                           height: 24.0,
-                          decoration: BoxDecoration(
+                          decoration: const BoxDecoration(
                             image: DecorationImage(
                               image: AssetImage("assets/facebook.jpg"),
                               fit: BoxFit.cover,
