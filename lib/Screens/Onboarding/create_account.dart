@@ -230,13 +230,14 @@ class _CreateAccountState extends State<CreateAccount> {
                       enabledBorder: InputBorder.none,
                       focusedBorder: InputBorder.none,
                       suffixIcon: IconButton(
-                          onPressed: _toggleVisibility,
-                          icon: _isHidden
-                              ? Icon(
-                                  Icons.visibility_off,
-                                  color: Colors.grey,
-                                )
-                              : Icon(Icons.visibility, color: Colors.grey)),
+                        onPressed: _toggleVisibility,
+                        icon: _isHidden
+                            ? const Icon(
+                                Icons.visibility_off,
+                                color: Colors.grey,
+                              )
+                            : const Icon(Icons.visibility, color: Colors.grey),
+                      ),
                     ),
                   ),
                 ),
@@ -246,7 +247,8 @@ class _CreateAccountState extends State<CreateAccount> {
                       ? const Color(0xFFFA9B0D)
                       : const Color(0xFF959595),
                   shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(25)),
+                    borderRadius: BorderRadius.circular(50),
+                  ),
                   onPressed: () {},
                   child: Container(
                     // width: 376,
