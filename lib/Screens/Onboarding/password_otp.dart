@@ -108,9 +108,10 @@ class _otpState extends State<otp> {
                   child: PinCodeTextField(
                     controller: _controller,
                     appContext: context,
-                    pastedTextStyle: TextStyle(
-                      color: Colors.green.shade600,
-                      fontWeight: FontWeight.bold,
+                    pastedTextStyle: const TextStyle(
+                      fontSize: 24,
+                      color: Color(0xFF332E28),
+                      fontWeight: FontWeight.w600,
                     ),
                     length: 4,
                     obscureText: true,
@@ -132,7 +133,7 @@ class _otpState extends State<otp> {
                       borderRadius: BorderRadius.circular(5),
                       fieldHeight: 50,
                       fieldWidth: 50,
-                      activeFillColor: Colors.white,
+                      activeFillColor: Color(0xFFD6D4D1),
                     ),
                     cursorColor: Colors.black,
                     animationDuration: const Duration(milliseconds: 300),
@@ -170,6 +171,12 @@ class _otpState extends State<otp> {
               const SizedBox(height: 71),
               const Text("Resend OTP"),
               MaterialButton(
+                color: _isFilled
+                    ? const Color(0xFFFA9B0D)
+                    : const Color(0xFF959595),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(50),
+                ),
                 onPressed: () {
                   formKey.currentState!.validate();
                   //conditions for validating
@@ -192,7 +199,6 @@ class _otpState extends State<otp> {
                   }
                 },
                 child: Container(
-                  width: 376,
                   height: 50,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(50),
