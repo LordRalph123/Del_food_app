@@ -1,3 +1,4 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
 class CreateAccount extends StatefulWidget {
@@ -59,12 +60,12 @@ class _CreateAccountState extends State<CreateAccount> {
           width: 428,
           height: 1198,
           child: Padding(
-            padding: EdgeInsets.fromLTRB(26, 32, 26, 32),
+            padding: const EdgeInsets.fromLTRB(26, 32, 26, 32),
             child: ListView(
               scrollDirection: Axis.vertical,
               children: [
-                Center(
-                  child: const Text(
+                const Center(
+                  child: Text(
                     "Create Your Account",
                     style: TextStyle(
                         fontSize: 24,
@@ -72,14 +73,14 @@ class _CreateAccountState extends State<CreateAccount> {
                         fontWeight: FontWeight.w600),
                   ),
                 ),
-                SizedBox(height: 32),
-                Row(
+                const SizedBox(height: 32),
+                const Row(
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     SizedBox(
                       width: 14,
                     ),
-                    const Text(
+                    Text(
                       "Full name",
                       style: TextStyle(
                         fontSize: 14,
@@ -99,16 +100,20 @@ class _CreateAccountState extends State<CreateAccount> {
                   child: TextField(
                     controller: _controller,
                     decoration: const InputDecoration(
-                        contentPadding: EdgeInsets.symmetric(
-                            horizontal: 20.0, vertical: 15.0),
-                        border: InputBorder.none,
-                        enabledBorder: InputBorder.none,
-                        focusedBorder: InputBorder.none,
-                        hintText: "",
-                        hintStyle: TextStyle()),
+                      contentPadding: EdgeInsets.symmetric(
+                          horizontal: 20.0, vertical: 15.0),
+                      border: InputBorder.none,
+                      enabledBorder: InputBorder.none,
+                      focusedBorder: InputBorder.none,
+                      hintText: "Daniel Davies",
+                      hintStyle: TextStyle(
+                          fontSize: 14,
+                          color: Color(0xFF5A5A5A),
+                          fontWeight: FontWeight.w600),
+                    ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 25,
                 ),
                 const Row(
@@ -145,7 +150,12 @@ class _CreateAccountState extends State<CreateAccount> {
                     readOnly: false,
                     controller: _dateController,
                     decoration: InputDecoration(
-                      contentPadding: EdgeInsets.symmetric(
+                      hintText: "27/04/1991",
+                      hintStyle: const TextStyle(
+                          fontSize: 14,
+                          color: Color(0xFF5A5A5A),
+                          fontWeight: FontWeight.w600),
+                      contentPadding: const EdgeInsets.symmetric(
                           horizontal: 20.0, vertical: 15.0),
                       border: InputBorder.none,
                       enabledBorder: InputBorder.none,
@@ -162,14 +172,53 @@ class _CreateAccountState extends State<CreateAccount> {
                     ),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 25,
                 ),
-                Row(
+                const Row(
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
                     SizedBox(width: 14),
-                    const Text(
+                    Text(
+                      "Phone number",
+                      style: TextStyle(
+                          fontSize: 14,
+                          fontWeight: FontWeight.w500,
+                          color: Color(0xFF5A5A5A)),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 3),
+                Container(
+                  width: 376,
+                  height: 50,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(50),
+                    border: Border.all(color: Colors.grey, width: 1),
+                  ),
+                  child: const TextField(
+                    decoration: InputDecoration(
+                      hintText: "08120130534",
+                      hintStyle: TextStyle(
+                          fontSize: 14,
+                          color: Color(0xFF5A5A5A),
+                          fontWeight: FontWeight.w600),
+                      contentPadding: EdgeInsets.symmetric(
+                          horizontal: 20.0, vertical: 15.0),
+                      border: InputBorder.none,
+                      enabledBorder: InputBorder.none,
+                      focusedBorder: InputBorder.none,
+                    ),
+                  ),
+                ),
+                const SizedBox(
+                  height: 25,
+                ),
+                const Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    SizedBox(width: 14),
+                    Text(
                       "Email address",
                       style: TextStyle(
                           fontSize: 14,
@@ -188,6 +237,11 @@ class _CreateAccountState extends State<CreateAccount> {
                   ),
                   child: const TextField(
                     decoration: InputDecoration(
+                      hintText: "myemail@gmail.com",
+                      hintStyle: TextStyle(
+                          fontSize: 14,
+                          color: Color(0xFF5A5A5A),
+                          fontWeight: FontWeight.w600),
                       contentPadding: EdgeInsets.symmetric(
                           horizontal: 20.0, vertical: 15.0),
                       border: InputBorder.none,
@@ -241,6 +295,37 @@ class _CreateAccountState extends State<CreateAccount> {
                     ),
                   ),
                 ),
+                const SizedBox(height: 20),
+                Flexible(
+                  child: RichText(
+                    text: TextSpan(
+                      children: [
+                        const TextSpan(
+                          text: "Forgot your password?",
+                          style: TextStyle(
+                              color: Color(0xFF5A5A5A),
+                              fontSize: 16,
+                              fontWeight: FontWeight.w400),
+                        ),
+                        TextSpan(
+                          text: "Click here",
+                          style: const TextStyle(
+                              color: Color(0xFFFA9B0D),
+                              fontSize: 16,
+                              fontWeight: FontWeight.w400),
+                          recognizer: TapGestureRecognizer()
+                            ..onTap = () {
+                              Navigator.of(context).pushReplacement(
+                                MaterialPageRoute(
+                                  builder: (context) => const CreateAccount(),
+                                ),
+                              );
+                            },
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
                 const SizedBox(height: 64),
                 MaterialButton(
                   color: _isFilled
@@ -253,7 +338,7 @@ class _CreateAccountState extends State<CreateAccount> {
                   child: Container(
                     height: 50,
                     decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(25),
+                      borderRadius: BorderRadius.circular(50),
                     ),
                     child: const Center(
                       child: Text(
@@ -319,16 +404,20 @@ class _CreateAccountState extends State<CreateAccount> {
                     Container(
                       height: 1,
                       width: 144,
-                      decoration: BoxDecoration(color: Colors.grey),
+                      decoration: const BoxDecoration(color: Colors.grey),
                     ),
-                    Text(
+                    const Text(
                       "Or",
                       style: TextStyle(
                           color: Color(0xFF332E28),
                           fontSize: 18,
                           fontWeight: FontWeight.w600),
                     ),
-                    Divider(color: Color(0xFFD6D4D1), thickness: 1),
+                    Container(
+                      height: 1,
+                      width: 144,
+                      decoration: const BoxDecoration(color: Colors.grey),
+                    ),
                   ],
                 ),
                 const SizedBox(height: 48),
@@ -387,8 +476,8 @@ class _CreateAccountState extends State<CreateAccount> {
                             ),
                           ),
                         ),
-                        SizedBox(width: 24),
-                        Text(
+                        const SizedBox(width: 24),
+                        const Text(
                           "Sign up with Facebook",
                           style: TextStyle(
                               color: Color(0xFF5A5A5A),
