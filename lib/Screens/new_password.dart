@@ -116,7 +116,10 @@ class _NewPassWordScreenState extends State<NewPassWordScreen> {
                   SizedBox(width: 14),
                   Text(
                     "Confirm Password",
-                    style: TextStyle(),
+                    style: TextStyle(
+                        fontSize: 14,
+                        color: Color(0xFF5A5A5A),
+                        fontWeight: FontWeight.w400),
                   ),
                 ],
               ),
@@ -129,13 +132,26 @@ class _NewPassWordScreenState extends State<NewPassWordScreen> {
                   border: Border.all(color: Colors.grey, width: 1),
                 ),
                 child: TextField(
+                  obscureText: _isHidden,
                   decoration: InputDecoration(
-                      suffixIcon: IconButton(
-                    onPressed: () {},
-                    icon: const Icon(Icons.visibility_off),
-                  )),
+                    contentPadding: const EdgeInsets.symmetric(
+                        horizontal: 20.0, vertical: 15.0),
+                    border: InputBorder.none,
+                    enabledBorder: InputBorder.none,
+                    focusedBorder: InputBorder.none,
+                    suffixIcon: IconButton(
+                      onPressed: _toggleVisibility,
+                      icon: _isHidden
+                          ? const Icon(
+                              Icons.visibility_off,
+                              color: Colors.grey,
+                            )
+                          : const Icon(Icons.visibility, color: Colors.grey),
+                    ),
+                  ),
                 ),
               ),
+              const SizedBox(height: 300),
               MaterialButton(
                 color: _isFilled
                     ? const Color(0xFFFA9B0D)
@@ -145,7 +161,7 @@ class _NewPassWordScreenState extends State<NewPassWordScreen> {
                 ),
                 onPressed: () {},
                 child: Container(
-                  width: 376,
+                  // width: 376,
                   height: 50,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(50),
