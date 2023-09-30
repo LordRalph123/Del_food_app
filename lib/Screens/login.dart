@@ -27,6 +27,14 @@ class _LoginScreenState extends State<LoginScreen> {
     });
   }
 
+  bool _isHidden = true;
+
+  void _toggleVisibility() {
+    setState(() {
+      _isHidden = !_isHidden;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -78,12 +86,21 @@ class _LoginScreenState extends State<LoginScreen> {
               border: Border.all(color: Colors.grey, width: 1),
             ),
             child: TextField(
+              obscureText: _isHidden,
               decoration: InputDecoration(
+                contentPadding: const EdgeInsets.symmetric(
+                    horizontal: 20.0, vertical: 15.0),
+                border: InputBorder.none,
+                enabledBorder: InputBorder.none,
+                focusedBorder: InputBorder.none,
                 suffixIcon: IconButton(
-                  onPressed: () {
-                    print("hello");
-                  },
-                  icon: const Icon(Icons.visibility_off),
+                  onPressed: _toggleVisibility,
+                  icon: _isHidden
+                      ? const Icon(
+                          Icons.visibility_off,
+                          color: Colors.grey,
+                        )
+                      : const Icon(Icons.visibility, color: Colors.grey),
                 ),
               ),
             ),
