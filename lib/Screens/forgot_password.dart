@@ -16,11 +16,17 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
       child: Scaffold(
         backgroundColor: Colors.white,
         appBar: AppBar(
+          backgroundColor: Colors.white,
+          elevation: 0.00,
           leading: IconButton(
             onPressed: () {
               Navigator.of(context).pop();
             },
-            icon: const Icon(Icons.arrow_back, size: 24),
+            icon: const Icon(
+              Icons.arrow_back,
+              size: 24,
+              color: Colors.black,
+            ),
           ),
         ),
         body: Padding(
@@ -35,9 +41,15 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
                     fontSize: 24,
                     fontWeight: FontWeight.w700),
               ),
+              const SizedBox(
+                height: 6,
+              ),
               const Text(
                 "Don't worry, in just a few simple steps your\n account will be back in the game",
-                style: TextStyle(fontSize: 14, color: Colors.black),
+                style: TextStyle(
+                    fontSize: 14,
+                    color: Colors.black,
+                    fontWeight: FontWeight.w400),
               ),
               const SizedBox(height: 54),
               const Row(
@@ -85,7 +97,9 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(50),
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  print"logic"
+                },
                 child: Container(
                   height: 50,
                   decoration: BoxDecoration(

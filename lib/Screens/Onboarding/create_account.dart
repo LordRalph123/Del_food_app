@@ -1,6 +1,8 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
+import '../forgot_password.dart';
+
 class CreateAccount extends StatefulWidget {
   const CreateAccount({super.key});
 
@@ -317,7 +319,8 @@ class _CreateAccountState extends State<CreateAccount> {
                             ..onTap = () {
                               Navigator.of(context).pushReplacement(
                                 MaterialPageRoute(
-                                  builder: (context) => const CreateAccount(),
+                                  builder: (context) =>
+                                      const ForgotPasswordScreen(),
                                 ),
                               );
                             },
@@ -403,9 +406,10 @@ class _CreateAccountState extends State<CreateAccount> {
                   children: [
                     Container(
                       height: 1,
-                      width: 144,
+                      width: 110,
                       decoration: const BoxDecoration(color: Colors.grey),
                     ),
+                    const SizedBox(width: 32),
                     const Text(
                       "Or",
                       style: TextStyle(
@@ -413,9 +417,10 @@ class _CreateAccountState extends State<CreateAccount> {
                           fontSize: 18,
                           fontWeight: FontWeight.w600),
                     ),
+                    const SizedBox(width: 32),
                     Container(
                       height: 1,
-                      width: 144,
+                      width: 110,
                       decoration: const BoxDecoration(color: Colors.grey),
                     ),
                   ],
