@@ -97,9 +97,7 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(50),
                 ),
-                onPressed: () {
-                  //
-                },
+                onPressed: () {},
                 child: Container(
                   height: 50,
                   decoration: BoxDecoration(
