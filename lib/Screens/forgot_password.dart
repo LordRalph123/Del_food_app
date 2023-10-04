@@ -98,7 +98,7 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
                   borderRadius: BorderRadius.circular(50),
                 ),
                 onPressed: () {
-                  ///print
+                  ///pr
                 },
                 child: Container(
                   height: 50,
