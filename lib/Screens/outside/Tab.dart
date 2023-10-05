@@ -25,14 +25,18 @@ class _MyWidgetState extends State<MyWidget> {
     return Scaffold(
       backgroundColor: Colors.white,
       body: _pages[_currentIndex],
-      bottomNavigationBar: BottomNavigationBar(items: [
-        BottomNavigationBarItem(
-          icon: IconButton(
-            icon: Icon(Icons.ac_unit_sharp),
-            onPressed: () {},
+      bottomNavigationBar: BottomNavigationBar(
+        items: [
+          BottomNavigationBarItem(
+            icon: IconButton(
+              icon: Icon(Icons.ac_unit_sharp),
+              onPressed: () {},
+            ),
           ),
-        )
-      ]),
+          BottomNavigationBarItem(
+              icon: IconButton(onPressed: onPressed, icon: icon))
+        ],
+      ),
     );
   }
 }
