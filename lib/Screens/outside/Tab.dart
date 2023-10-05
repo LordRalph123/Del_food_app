@@ -24,7 +24,32 @@ class _MyWidgetState extends State<MyWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      body: _pages[_currentIndex],
+      body: Column(
+        children: [
+          _pages[_currentIndex],
+          const SizedBox(height: 66),
+          MaterialButton(
+            onPressed: () {},
+            child: Container(
+              width: 376,
+              height: 50,
+              decoration: BoxDecoration(
+                color: Color(0xFFFA9B0D),
+                borderRadius: BorderRadius.circular(50),
+              ),
+              child: const Center(
+                child: Text(
+                  "Login",
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 16,
+                      fontWeight: FontWeight.w600),
+                ),
+              ),
+            ),
+          ),
+        ],
+      ),
       bottomNavigationBar: BottomNavigationBar(
         items: [
           BottomNavigationBarItem(
@@ -40,6 +65,12 @@ class _MyWidgetState extends State<MyWidget> {
           BottomNavigationBarItem(
               icon: IconButton(onPressed: () {}, icon: Icon(Icons.abc)))
         ],
+        onTap: (index) {
+          setState(() {
+            _currentIndex = index;
+          });
+        },
+        selectedItemColor: Colors.yellow,
       ),
     );
   }
