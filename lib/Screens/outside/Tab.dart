@@ -34,7 +34,7 @@ class _MyWidgetState extends State<MyWidget> {
             ),
           ),
           BottomNavigationBarItem(
-              icon: IconButton(onPressed: onPressed, icon: icon))
+              icon: IconButton(onPressed: () {}, icon: Icon(Icons.abc)))
         ],
       ),
     );
