@@ -29,7 +29,7 @@ class _AccountOutsideState extends State<AccountOutside> {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
-          Text(
+          const Text(
             "Login to start, explore and personalise your\n shopping experience",
             style: TextStyle(
               fontSize: 14,
@@ -37,21 +37,24 @@ class _AccountOutsideState extends State<AccountOutside> {
               color: Color(0XF332E28),
             ),
           ),
-          SizedBox(height: 30),
-          Container(
-            width: 376,
-            height: 50,
-            decoration: BoxDecoration(
-              color: Color(0xFFFA9B0D),
-              borderRadius: BorderRadius.circular(50),
-            ),
-            child: const Center(
-              child: Text(
-                "Login",
-                style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 16,
-                    fontWeight: FontWeight.w600),
+          const SizedBox(height: 30),
+          MaterialButton(
+            onPressed: () {},
+            child: Container(
+              width: 376,
+              height: 50,
+              decoration: BoxDecoration(
+                color: Color(0xFFFA9B0D),
+                borderRadius: BorderRadius.circular(50),
+              ),
+              child: const Center(
+                child: Text(
+                  "Login",
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 16,
+                      fontWeight: FontWeight.w600),
+                ),
               ),
             ),
           ),
