@@ -47,6 +47,8 @@ class _NewPassWordScreenState extends State<NewPassWordScreen> {
             },
             icon: const Icon(Icons.cancel, size: 24),
           ),
+          backgroundColor: Colors.white,
+          elevation: 0.00,
         ),
         body: Padding(
           padding: const EdgeInsets.fromLTRB(26, 32, 26, 100),

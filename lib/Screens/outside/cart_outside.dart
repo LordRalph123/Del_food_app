@@ -20,6 +20,35 @@ class CartPAge extends StatelessWidget {
           ),
         ),
       ),
+      body: Center(
+        child: Column(
+          children: [
+            Container(
+              height: 242,
+              width: 242,
+              decoration: BoxDecoration(),
+            ),
+            const SizedBox(height: 64),
+            const Text(
+              "Your Cart is empty",
+              style: TextStyle(
+                fontSize: 16,
+                fontWeight: FontWeight.w600,
+                color: Color(0xFF332E28),
+              ),
+            ),
+            const SizedBox(height: 8),
+            const Text(
+              "You need to log in to able to add\n items to your cart",
+              style: TextStyle(
+                fontSize: 14,
+                fontWeight: FontWeight.w400,
+                color: Color(0xFF332E28),
+              ),
+            )
+          ],
+        ),
+      ),
     );
   }
 }
