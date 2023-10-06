@@ -32,9 +32,14 @@ class _AccountOutsideState extends State<AccountOutside> {
           child: Column(
             children: [
               Container(
-                height: 242,
-                width: 242,
-                decoration: BoxDecoration(),
+                width: 242.0,
+                height: 242.0,
+                decoration: const BoxDecoration(
+                  image: DecorationImage(
+                    image: AssetImage("assets/bag.jpg"),
+                    fit: BoxFit.cover,
+                  ),
+                ),
               ),
               const SizedBox(height: 64),
               const Text(
