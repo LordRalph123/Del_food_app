@@ -98,7 +98,9 @@ class _MyWidgetState extends State<MyWidget> {
           },
           selectedItemColor: Colors.yellow,
         ),
-        floatingActionButton: FloatingActionButton(onPressed: () {}),
+        floatingActionButton: FloatingActionButton(
+          onPressed: () {},
+        ),
       ),
     );
   }
