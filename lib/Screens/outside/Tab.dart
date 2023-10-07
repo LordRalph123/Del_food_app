@@ -76,7 +76,7 @@ class _MyWidgetState extends State<MyWidget> {
               icon: IconButton(
                 onPressed: () {},
                 icon: const Icon(
-                  color: Color(value),
+                  color: Color(0XFF959595),
                   Icons.list_alt_sharp,
                   size: 24,
                 ),
