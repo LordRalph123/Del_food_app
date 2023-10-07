@@ -89,7 +89,7 @@ class _MyWidgetState extends State<MyWidget> {
                   size: 24,
                 ),
               ),
-            )
+            ),
           ],
           onTap: (index) {
             setState(() {
