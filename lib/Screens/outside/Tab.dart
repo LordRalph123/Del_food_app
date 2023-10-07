@@ -75,7 +75,8 @@ class _MyWidgetState extends State<MyWidget> {
             BottomNavigationBarItem(
               icon: IconButton(
                 onPressed: () {},
-                icon: const Icon(color:,
+                icon: const Icon(
+                  color: Color(value),
                   Icons.list_alt_sharp,
                   size: 24,
                 ),
