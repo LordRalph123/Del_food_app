@@ -54,7 +54,7 @@ class _OrderHistoryState extends State<OrderHistory> {
         controller: _tabController,
         children:const  [
           Center(child: History()),
-          Center(child: ),
+          Center(child: Pending() ),
         ],
       ),
           ],
