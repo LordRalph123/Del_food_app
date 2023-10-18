@@ -23,8 +23,8 @@ class _OrderHistoryState extends State<OrderHistory>
       appBar: AppBar(
         title: const Text(
           "Flutter TabBar Demo",style: TextStyle(fontSize:18,
-fontWeight:FontWeight(700),
-color = Color(0xFF332E28),
+fontWeight:FontWeight.w700,
+color  Color(0xFF332E28),
 
 )),
         ),
