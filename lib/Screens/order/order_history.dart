@@ -31,9 +31,9 @@ class _OrderHistoryState extends State<OrderHistory>
         ),
         centerTitle: true,
         bottom: PreferredSize(
-          preferredSize: Size.fromHeight(50.0),
+          preferredSize: const Size.fromHeight(50.0),
           child: Container(
-            color: Colors.grey[200], // Container enclosing the TabBar
+            color: Colors.white, // Container enclosing the TabBar
             child: TabBar(
               controller: _tabController,
               labelColor: Colors.black,
