@@ -21,7 +21,7 @@ class _OrderHistoryState extends State<OrderHistory>
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Flutter TabBar Demo"),
+        title: const Text("Flutter TabBar Demo"),
         bottom: PreferredSize(
           preferredSize: Size.fromHeight(50.0),
           child: Container(
