@@ -40,23 +40,23 @@ class _OrderHistoryState extends State<OrderHistory>
             color: Colors.white, // Container enclosing the TabBar
             child: TabBar(
               controller: _tabController,
-              labelColor: Colors.black,
-              unselectedLabelColor: Colors.white,
+              labelColor: Colors.white,
+              unselectedLabelColor: Colors.black,
               indicator: BoxDecoration(
                 borderRadius: BorderRadius.circular(30),
-                color: Colors.blue, // Color when item is selected
+                color: const Color(0xFFFA9B0D), // Color when item is selected
               ),
               tabs: [
                 Tab(
                   child: Container(
-                    padding: EdgeInsets.all(10),
+                    padding: const EdgeInsets.all(10),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(30),
                       color: _tabController!.index == 0
                           ? Colors.blue
                           : Colors.transparent,
                     ),
-                    child: Align(
+                    child: const Align(
                       alignment: Alignment.center,
                       child: Text("Page 1"),
                     ),
@@ -64,7 +64,7 @@ class _OrderHistoryState extends State<OrderHistory>
                 ),
                 Tab(
                   child: Container(
-                    padding: EdgeInsets.all(10),
+                    padding: const EdgeInsets.all(10),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(30),
                       color: _tabController!.index == 1
