@@ -22,7 +22,11 @@ class _OrderHistoryState extends State<OrderHistory>
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          "Flutter TabBar Demo",style: ,
+          "Flutter TabBar Demo",style: TextStyle(fontSize:18,
+fontWeight:FontWeight(700),
+color = Color(0xFF332E28),
+
+)),
         ),
         bottom: PreferredSize(
           preferredSize: Size.fromHeight(50.0),
