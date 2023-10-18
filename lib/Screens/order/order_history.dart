@@ -1,3 +1,4 @@
+import 'package:delfood_app/Screens/order/pending.dart';
 import 'package:flutter/material.dart';
 
 import 'history.dart';
@@ -10,61 +11,56 @@ class OrderHistory extends StatefulWidget {
 }
 
 class _OrderHistoryState extends State<OrderHistory> {
-  TabController? _tabController;
-
-  @override
-  void initState() {
-    super.initState();
-    _tabController = TabController(length: 2, vsync: );
-  }
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
+    return DefaultTabController(
+      length: 2,
       child: Scaffold(
         appBar: AppBar(
-            leading: IconButton(
-              onPressed: () {},
-              icon: const Icon(Icons.arrow_back, size: 24),
+          title: const Text(
+            "My Order",
+            style: TextStyle(
+              fontSize: 18,
+              fontWeight: FontWeight.w700,
+              color: Color(0xFF332E28),
             ),
-            title: const Text(
-              "Order",
-              style: TextStyle(
-                fontSize: 18,
-                fontWeight: FontWeight.w700,
-                color: Color(0xFF332E28),
+          ),
+          bottom: TabBar(
+            indicator: const BoxDecoration(
+              color: Color(
+                  0xFFFA9B0D), // This is the color you'd like for the active tab
+            ),
+            tabs: [
+              Container(
+                padding: const EdgeInsets.all(8),
+                decoration: const BoxDecoration(
+                  color: Colors.red, // Default color for the tab
+                ),
+                child: const Align(
+                  alignment: Alignment.center,
+                  child: Text("Pending"),
+                ),
               ),
-            ),
-            elevation: 0.00,
-            backgroundColor: Colors.white,
+              Container(
+                padding: const EdgeInsets.all(8),
+                decoration: const BoxDecoration(
+                  color: Colors.green, // Default color for the tab
+                ),
+                child: const Align(
+                  alignment: Alignment.center,
+                  child: Text("History"),
+                ),
+              ),
+            ],
           ),
-         body: Column(
+        ),
+        body: const TabBarView(
           children: [
-            Container(
-            color: Colors.amber,
-            child: TabBar(
-              controller: _tabController,
-              tabs: const [
-                Tab(text: 'Pending'),
-                Tab(text: 'History'),
-              ],
-            ),
-          ),
-          const SizedBox(height: 20),
-           TabBarView(
-        controller: _tabController,
-        children:const  [
-          Center(child: History()),
-          Center(child: Pending() ),
-        ],
-      ),
+            Center(child: History()),
+            Center(child: Pending()),
           ],
-         ), 
+        ),
       ),
     );
-  }
-  @override
-  void dispose() {
-    _tabController?.dispose();
-    super.dispose();
   }
 }
