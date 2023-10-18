@@ -21,13 +21,12 @@ class _OrderHistoryState extends State<OrderHistory>
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text(
-          "Flutter TabBar Demo",style: TextStyle(fontSize:18,
-fontWeight:FontWeight.w700,
-color  Color(0xFF332E28),
-
-)),
-        ),
+        title: const Text("Flutter TabBar Demo",
+            style: TextStyle(
+              fontSize: 18,
+              fontWeight: FontWeight.w700,
+              color: Color(0xFF332E28),
+            )),
         bottom: PreferredSize(
           preferredSize: Size.fromHeight(50.0),
           child: Container(
