@@ -21,6 +21,10 @@ class _OrderHistoryState extends State<OrderHistory>
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        leading: IconButton(
+          onPressed: () {},
+          icon: const Icon(Icons.arrow_back, size: 24),
+        ),
         title: const Text(
           "My Order",
           style: TextStyle(
