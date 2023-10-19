@@ -1,3 +1,5 @@
+import 'package:delfood_app/Screens/order/history.dart';
+import 'package:delfood_app/Screens/order/pending.dart';
 import 'package:flutter/material.dart';
 
 class OrderHistory extends StatefulWidget {
@@ -58,7 +60,13 @@ class _OrderHistoryState extends State<OrderHistory>
                     ),
                     child: const Align(
                       alignment: Alignment.center,
-                      child: Text("Page 1"),
+                      child: Text(
+                        "Pending",
+                        style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.w600,
+                        ),
+                      ),
                     ),
                   ),
                 ),
@@ -71,9 +79,15 @@ class _OrderHistoryState extends State<OrderHistory>
                           ? Colors.blue
                           : Colors.transparent,
                     ),
-                    child: Align(
+                    child: const Align(
                       alignment: Alignment.center,
-                      child: Text("Page 2"),
+                      child: Text(
+                        "History",
+                        style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.w600,
+                        ),
+                      ),
                     ),
                   ),
                 ),
@@ -84,9 +98,9 @@ class _OrderHistoryState extends State<OrderHistory>
       ),
       body: TabBarView(
         controller: _tabController,
-        children: [
-          Center(child: Text("Content of Page 1")),
-          Center(child: Text("Content of Page 2")),
+        children: const [
+          Center(child: Pending()),
+          Center(child: History()),
         ],
       ),
     );
