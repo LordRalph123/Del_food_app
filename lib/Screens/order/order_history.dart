@@ -55,8 +55,8 @@ class _OrderHistoryState extends State<OrderHistory>
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(30),
                       color: _tabController!.index == 0
-                          ? Colors.blue
-                          : Colors.transparent,
+                          ? Colors.white
+                          : const Color(0xFFFA9B0D),
                     ),
                     child: const Align(
                       alignment: Alignment.center,
@@ -76,8 +76,8 @@ class _OrderHistoryState extends State<OrderHistory>
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(30),
                       color: _tabController!.index == 1
-                          ? Colors.blue
-                          : Colors.transparent,
+                          ? Colors.white
+                          : const Color(0xFFFA9B0D),
                     ),
                     child: const Align(
                       alignment: Alignment.center,
