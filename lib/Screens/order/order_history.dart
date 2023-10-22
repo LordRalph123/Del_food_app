@@ -46,7 +46,7 @@ class _OrderHistoryState extends State<OrderHistory>
               unselectedLabelColor: Colors.black,
               indicator: BoxDecoration(
                 borderRadius: BorderRadius.circular(30),
-                color: const Color(0xFFFA9B0D), // Color when item is selected
+                color: const Color(0xFFFA9B0D), // Color when ite
               ),
               tabs: [
                 Tab(
