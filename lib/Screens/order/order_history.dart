@@ -39,7 +39,7 @@ class _OrderHistoryState extends State<OrderHistory>
         bottom: PreferredSize(
           preferredSize: const Size.fromHeight(50.0),
           child: Container(
-            color: Colors.white, // Container enclosing the TabBar
+            color: Colors.white, //Container enclosing the TabBar
             child: TabBar(
               controller: _tabController,
               labelColor: Colors.white,
