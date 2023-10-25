@@ -11,7 +11,7 @@ class _HistoryState extends State<History> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: ,
+      height: 567,
       width: ,
     );
   }
