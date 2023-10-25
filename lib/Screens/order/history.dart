@@ -12,7 +12,7 @@ class _HistoryState extends State<History> {
   Widget build(BuildContext context) {
     return Container(
       height: 567,
-      width: ,
+      width: 300,
     );
   }
 }
