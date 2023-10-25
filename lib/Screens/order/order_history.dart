@@ -100,7 +100,6 @@ class _OrderHistoryState extends State<OrderHistory>
         controller: _tabController,
         children: const [
           Center(child: Pending()),
-
           ///work on this
           Center(child: History()),
         ],
