@@ -11,7 +11,9 @@ class _PendingState extends State<Pending> {
   @override
   Widget build(BuildContext context) {
     return const SafeArea(
-child:Scaffold(),
+child:Scaffold(
+  
+),
     );
   }
 }
