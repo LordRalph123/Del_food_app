@@ -13,7 +13,7 @@ class _HistoryState extends State<History> {
     return Container(
       height: 567,
       width: 300,
-      decoration: ,
+      decoration: Box,
     );
   }
 }
