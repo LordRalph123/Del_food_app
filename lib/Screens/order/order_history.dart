@@ -21,88 +21,90 @@ class _OrderHistoryState extends State<OrderHistory>
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        leading: IconButton(
-          onPressed: () {},
-          icon: const Icon(Icons.arrow_back, size: 24),
-        ),
-        title: const Text(
-          "My Order",
-          style: TextStyle(
-            fontSize: 18,
-            fontWeight: FontWeight.w700,
-            color: Color(0xFF332E28),
+    return SafeArea(
+      child: Scaffold(
+        appBar: AppBar(
+          leading: IconButton(
+            onPressed: () {},
+            icon: const Icon(Icons.arrow_back, size: 24),
           ),
-        ),
-        centerTitle: true,
-        bottom: PreferredSize(
-          preferredSize: const Size.fromHeight(50.0),
-          child: Container(
-            color: Colors.white, //Container enclosing the TabBar
-            child: TabBar(
-              controller: _tabController,
-              labelColor: Colors.white,
-              unselectedLabelColor: Colors.black,
-              indicator: BoxDecoration(
-                borderRadius: BorderRadius.circular(30),
-                color: const Color(0xFFFA9B0D), //Color when ite
-              ),
-              tabs: [
-                Tab(
-                  child: Container(
-                    padding: const EdgeInsets.all(10),
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(30),
-                      color: _tabController!.index == 0
-                          ? Colors.white
-                          : const Color(0xFFFA9B0D),
-                    ),
-                    child: const Align(
-                      alignment: Alignment.center,
-                      child: Text(
-                        "Pending",
-                        style: TextStyle(
-                          fontSize: 16,
-                          fontWeight: FontWeight.w600,
-                        ),
-                      ),
-                    ),
-                  ),
-                ),
-                Tab(
-                  child: Container(
-                    padding: const EdgeInsets.all(10),
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(30),
-                      color: _tabController!.index == 1
-                          ? Colors.white
-                          : const Color(0xFFFA9B0D),
-                    ),
-                    child: const Align(
-                      alignment: Alignment.center,
-                      child: Text(
-                        "History",
-                        style: TextStyle(
-                          fontSize: 16,
-                          fontWeight: FontWeight.w600,
-                        ),
-                      ),
-                    ),
-                  ),
-                ),
-              ],
+          title: const Text(
+            "My Order",
+            style: TextStyle(
+              fontSize: 18,
+              fontWeight: FontWeight.w700,
+              color: Color(0xFF332E28),
             ),
-          ), //rduy
+          ),
+          centerTitle: true,
+          bottom: PreferredSize(
+            preferredSize: const Size.fromHeight(50.0),
+            child: Container(
+              color: Colors.white, //Container enclosing the TabBar
+              child: TabBar(
+                controller: _tabController,
+                labelColor: Colors.white,
+                unselectedLabelColor: Colors.black,
+                indicator: BoxDecoration(
+                  borderRadius: BorderRadius.circular(30),
+                  color: const Color(0xFFFA9B0D), //Color when ite
+                ),
+                tabs: [
+                  Tab(
+                    child: Container(
+                      padding: const EdgeInsets.all(10),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(30),
+                        color: _tabController!.index == 0
+                            ? Colors.white
+                            : const Color(0xFFFA9B0D),
+                      ),
+                      child: const Align(
+                        alignment: Alignment.center,
+                        child: Text(
+                          "Pending",
+                          style: TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.w600,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                  Tab(
+                    child: Container(
+                      padding: const EdgeInsets.all(10),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(30),
+                        color: _tabController!.index == 1
+                            ? Colors.white
+                            : const Color(0xFFFA9B0D),
+                      ),
+                      child: const Align(
+                        alignment: Alignment.center,
+                        child: Text(
+                          "History",
+                          style: TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.w600,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ), //rduy
+          ),
+        ), //wedw
+        body: TabBarView(
+          controller: _tabController,
+          children: const [
+            Center(child: Pending()),
+            ///work on this
+            Center(child: History()),
+          ],
         ),
-      ), //wedw
-      body: TabBarView(
-        controller: _tabController,
-        children: const [
-          Center(child: Pending()),
-          ///work on this
-          Center(child: History()),
-        ],
       ),
     );
   }
