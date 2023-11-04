@@ -52,7 +52,7 @@ class _OrderPageState extends State<OrderPage> {
                   color: Color(0xFF332E28),
                 ),
               ),
-              const SizedBox(height: 8),
+              const SizedBox(height: 8,),
               const Text(
                 "You need to log in to be able to\n make orders",
                 style: TextStyle(
