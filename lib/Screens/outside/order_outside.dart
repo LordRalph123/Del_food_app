@@ -14,7 +14,9 @@ class _OrderPageState extends State<OrderPage> {
       child: Scaffold(
         appBar: AppBar(
           leading: IconButton(
-            onPressed: () {},
+            onPressed: () {
+              print("get to the back page")
+            },
             icon: const Icon(Icons.arrow_back, size: 24),
           ),
           title: const Text(
