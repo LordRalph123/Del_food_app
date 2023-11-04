@@ -76,7 +76,7 @@ class _MyWidgetState extends State<MyWidget> {
             BottomNavigationBarItem(
               icon: IconButton(
                 onPressed: () {
-                  
+
                 },
                 icon: const Icon(
                   color: Color(0XFF959595),
@@ -87,7 +87,9 @@ class _MyWidgetState extends State<MyWidget> {
             ),
             BottomNavigationBarItem(
               icon: IconButton(
-                onPressed: () {},
+                onPressed: () {
+                  
+                },
                 icon: const Icon(
                   Icons.shopping_cart_outlined,
                   size: 24,
