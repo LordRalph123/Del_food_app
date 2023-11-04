@@ -58,7 +58,7 @@ class _MyWidgetState extends State<MyWidget> {
             BottomNavigationBarItem(
               icon: IconButton(
                   onPressed: () {
-                    
+
                   },
                   icon: const Icon(
                     Icons.home,
@@ -67,7 +67,9 @@ class _MyWidgetState extends State<MyWidget> {
             ),
             BottomNavigationBarItem(
               icon: IconButton(
-                onPressed: () {},
+                onPressed: () {
+                  
+                },
                 icon: const Icon(
                   Icons.heart_broken_outlined,
                   size: 24,
