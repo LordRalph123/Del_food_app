@@ -23,7 +23,7 @@ class _OrderPageState extends State<OrderPage> {
             "Order",
             style: TextStyle(
               fontSize: 18,
-              fontWeight: FontWeight.w700
+              fontWeight: FontWeight.w700,
               color: Color(0xFF332E28),
             ),
           ),
