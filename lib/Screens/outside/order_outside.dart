@@ -58,7 +58,7 @@ class _OrderPageState extends State<OrderPage> {
                   fontWeight: FontWeight.w400,
                   color: Color(0xFF332E28),
                 ),
-              )
+              ),
             ],
           ),
         ),
