@@ -62,7 +62,7 @@ class _OrderHistoryState extends State<OrderHistory>
                       child: const Align(
                         alignment: Alignment.center,
                         child: Text(
-                          "Pending",
+                          "Pending",//
                           style: TextStyle(
                             fontSize: 16,
                             fontWeight: FontWeight.w600,
