@@ -13,8 +13,7 @@ class _PendingState extends State<Pending> {
     return const SafeArea(
 child:Scaffold(
     body: Column(
-      children: [
- ],
+      children: [],
     ),
 ),
     );
