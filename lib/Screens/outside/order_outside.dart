@@ -17,7 +17,7 @@ class _OrderPageState extends State<OrderPage> {
             onPressed: () {
               print("get to the back page");
             },
-            icon: const Icon(Icons.arrow_back, size: 24),
+            icon: const Icon(Icons.arrow_back, size: 24, ),
           ),
           title: const Text(
             "Order",
