@@ -15,7 +15,7 @@ child:Scaffold(
     body: Column(
       children: [
       Container (
-    width    :r
+    width:
       ) 
       ],
     ),
