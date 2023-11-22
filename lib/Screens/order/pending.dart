@@ -15,7 +15,7 @@ child:Scaffold(
     body: Column(
       children: [
       Container (
-    width:
+    width:20,
       ) 
       ],
     ),
@@ -24,4 +24,4 @@ child:Scaffold(
   }
 }
 //today is 
-//cool
+//cool//
