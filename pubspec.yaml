@@ -60,7 +60,7 @@ flutter_native_splash:
         image: assets/first.jpg
         android: true
         iOS: true
-        
+        //
 
 flutter:
 
