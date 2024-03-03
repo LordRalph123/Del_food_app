@@ -17,7 +17,7 @@ class _HistoryState extends State<History> {
       height: 567,
       width: 300,
       decoration:const BoxDecoration(
-color: Colors.greenAccent,/
+color: Colors.greenAccent,
 ),
      
     );
