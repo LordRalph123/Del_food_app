@@ -12,7 +12,8 @@ class _PendingState extends State<Pending> {
   Widget build(BuildContext context) {
     return const SafeArea(
 child:Scaffold(
-    body:// Column(
+    body:C
+    // Column(
       //children: [
     //  Container (
    // width:20,
