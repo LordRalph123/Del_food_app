@@ -18,8 +18,8 @@ class _HistoryState extends State<History> {
       width: 300,
       decoration:const BoxDecoration(
 color: Colors.greenAccent,/// 
-)
-      ),
+),
+     ))
     );
   }
 }
