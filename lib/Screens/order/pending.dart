@@ -23,7 +23,7 @@ child:Scaffold(
     //  ],
   ///  ),
 ),//
-    );/
+    );//
   }//
 }
 //today is 
