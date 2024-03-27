@@ -109,7 +109,7 @@ class _AccountOutsideState extends State<AccountOutside> {
                   Icon(Icons.question_mark_rounded, size: 16),
                   Text(
                     "Help center",
-                    style: TextStyle(fontSize:29),
+                    style: TextStyle(fontSize:29, color:Colrs),
                   ),
                   SizedBox(width: 226),
                   IconButton(
