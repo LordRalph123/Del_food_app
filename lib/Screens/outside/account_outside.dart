@@ -44,7 +44,9 @@ class _AccountOutsideState extends State<AccountOutside> {
               ),
               const SizedBox(height: 30),
               MaterialButton(
-                onPressed: () {},
+                onPressed: () {
+                  
+                },
                 child: Container(
                   width: 376,
                   height: 50,
@@ -115,7 +117,8 @@ class _AccountOutsideState extends State<AccountOutside> {
                     icon: Icon(Icons.arrow_forward_ios),
                   ),
                   SizedBox(height: 23),
-                  Divider(),
+                  Divider(),,
+
                 ],
               ),
             ],
