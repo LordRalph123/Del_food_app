@@ -111,7 +111,7 @@ class _AccountOutsideState extends State<AccountOutside> {
                     "Help center",
                     style: TextStyle(fontSize:29, color:Colors.redAccent),
                   ),
-                  SizedBox(width: 226),
+                  const SizedBox(width: 226),
                   IconButton(
                     onPressed: () {},
                     icon: Icon(Icons.arrow_forward_ios),
