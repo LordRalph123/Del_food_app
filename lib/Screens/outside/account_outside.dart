@@ -113,7 +113,7 @@ class _AccountOutsideState extends State<AccountOutside> {
                   ),
                   const SizedBox(width: 226),
                   IconButton(
-                  onPressed:(){}
+                  onPressed:(){},
                     icon: Icon(Icons.arrow_forward_ios),
                   ),
                   const SizedBox(height:23),
