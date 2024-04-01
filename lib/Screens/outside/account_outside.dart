@@ -116,7 +116,7 @@ class _AccountOutsideState extends State<AccountOutside> {
                     onPressed: () {},
                     icon: Icon(Icons.arrow_forward_ios),
                   ),
-                  SizedBox(height:23),
+                  const SizedBox(height:23),
                   Divider(),
 
                 ],
