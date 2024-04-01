@@ -85,39 +85,39 @@ class _AccountOutsideState extends State<AccountOutside> {
                   ),
                 ),
               ),
-              SizedBox(height: 50),
-              Divider(),
+              const SizedBox(height: 50),
+              const Divider(),
               Row(
                 children: [
-                  Icon(Icons.settings, size: 16),
-                  Text(
+                  const Icon(Icons.settings, size: 16),
+                  const Text(
                     "Settings",
                     style: TextStyle(),
                   ),
-                  SizedBox(width: 253),
+                  const SizedBox(width: 253),
                   IconButton(
                     onPressed: () {},
-                    icon: Icon(Icons.arrow_forward_ios),
+                    icon: const Icon(Icons.arrow_forward_ios),
                   ),
-                  SizedBox(height: 23),
-                  Divider(),
+                  const SizedBox(height: 23),
+                  const Divider(),
                 ],
               ),
               const SizedBox(height: 23),
               Row(
                 children: [
-                  Icon(Icons.question_mark_rounded, size: 16),
-                  Text(
+                  const Icon(Icons.question_mark_rounded, size: 16),
+                  const Text(
                     "Help center",
                     style: TextStyle(fontSize:29, color:Colors.redAccent),
                   ),
                   const SizedBox(width: 226),
                   IconButton(
                   onPressed:(){},
-                    icon: Icon(Icons.arrow_forward_ios),
+                    icon: const Icon(Icons.arrow_forward_ios),
                   ),
                   const SizedBox(height:23),
-                  Divider(),
+                  const Divider(),
 
                 ],
               ),
