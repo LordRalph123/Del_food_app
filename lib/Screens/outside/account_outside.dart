@@ -104,7 +104,7 @@ class _AccountOutsideState extends State<AccountOutside> {
                 ],
               ),
               const SizedBox(height: 23),
-             const Row(
+              Row(
                 children: [
                   Icon(Icons.question_mark_rounded, size: 16),
                   Text(
